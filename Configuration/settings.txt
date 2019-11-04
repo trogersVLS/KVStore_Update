@@ -1,0 +1,4 @@
+﻿EQID     = 1111
+Location = ATS
+mfg code = A
+db_file_path = 

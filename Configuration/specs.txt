@@ -1,0 +1,49 @@
+﻿name,method_name,Pass/Fail,UpperBound,LowerBound
+Software Install,test_software_install,Yes,0,0
+Touchscreen Calibration,test_touch_cal,Yes,0,0
+MFG Software Install,test_mfg_install,Yes,0,0
+Power On Test,test_power_on,Yes,0,0
+Pre-Use Test,test_pre_use,Yes,0,0
+LCD_Test,test_lcd,Yes,0,0
+3V3_HOT Test,test_3V3_HOT,No,3382,3217
+5V0_HOT Test,test_5V0_HOT,No,5125,4875
+5V3 SMPS Test,test_5V0_SMPS,No,5432,5167
+12V0 SMPS Test,test_12V0_SMPS,No,12300,11700
+3V3 SMPS Test,test_3V3_SMPS,No,3382,3217
+1V2 SMPS Test,test_1V2_SMPS,No,1230,1170
+3V3 LDO Test,test_3V3 _LDO,No,3382,3217
+2V048 LDO Test,test_2V048_VREF,No,2078,2017
+30V SMPS Test,test_30V0_SMPS,No,33000,27000
+36V SMPS Test,test_36V0_SMPS,No,39600,32400
+SPI1 Bus Test,test_spi1_bus,Yes,0,0
+I2C Test,test_i2c_vent,Yes,0,0
+Blower Test,test_blower,Yes,0,0
+Exhalation Test,test_exhalation,Yes,0,0
+DAC Test,test_dac,Yes,0,0
+SOV Test,test_sov,Yes,0,0
+Oxygen Test,test_oxygen,Yes,0,0
+ExtO2 On Test,test_extO2_on,No,12300,11700
+ExtO2 Off Test,test_exto2_off,No,300,-300
+Cough Test,test_cough,Yes,0,0
+Nebulizer Test,test_neb,Yes,0,0
+Suction Test,test_suction,Yes,0,0
+Fan Low Voltage Test,test_low_fan_volt,No,7500,7100
+Fan Low Frequency Test,test_low_fan_freq,No,11700,11500
+Fan High Voltage Test,test_high_fan_volt,No,125,105
+Fan High Frequency Test,test_high_fan_freq,No,190,170
+Alarm Silence Test,alarm_silence_test,Yes,0,0
+Ambient Pressure Test,test_ambient_pressure,No,14,14
+Ambient Temperature Test,test_ambient_temperature,No,20,3
+Microphone Test,test_microphone,Yes,0,0
+Speaker Test,test_speaker,Yes,0,0
+Piezo Test,test_piezo,Yes,0,0
+External AC Test,test_external_ac,Yes,0,0
+Internal Battery Test,test_internal_battery,Yes,0,0
+Ext Battery 1 Test,test_external_battery_1,Yes,0,0
+Ext Battery 1 Test,test_external_battery_2,Yes,0,0
+Internal Charge CC Test,test_internal_chg_cc,No,1800,1200
+Internal Charge CV Test,test_internal_chg_cv,No,1500,300
+External 1 Charge CC Test,test_external1_chg_cc,No,1800,1200
+External 1 Charge CV Test,test_external1_chg_cv,No,1500,300
+External 2 Charge CC Test,test_external2_chg_cc,No,1800,1200
+External 2 Charge CV Test,test_external2_chg_cv,No,1500,300

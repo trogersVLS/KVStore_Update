@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Settings>
+  <config location="VLS" eqid="1111" mfg_code="V" dmm_address="COM15" pps_address=""/>
+  
+  
+  
+  <users>
+    <user username="admin" pass ="password"/>
+    <user username="" pass =""/>
+    <user username="trogers" pass="Mister0wl"/>
+    <user username="mfgoperator" pass="Ventec123!"/>
+  </users>
+
+  <specs>
+    <test name="Software Install" method_name="test_software_install" qual="true" upper="0" lower="0"/>
+    <test name="Touchscreen Calibration" method_name="tech_touch_cal" qual="true" upper="0" lower="0"/>
+    <test name="MFG Software Install" method_name="test_mfg_install" qual="true" upper="0" lower="0"/>
+    <test name="Power On Test" method_name="test_power_on" qual="true" upper="0" lower="0"/>
+    <test name="Pre-Use Test" method_name="test_pre_use" qual="true" upper="0" lower="0"/>
+    <test name="LCD Test" method_name="test_lcd" qual="true" upper="0" lower="0"/>
+    
+    <test name="3V3_HOT Test" method_name="test_voltage" qual="false" upper="3.382" lower="3.217"/>
+    <test name="5V0_HOT Test" method_name="test_voltage" qual="false" upper="5.125" lower="4.875"/>
+    <test name="5V3 SMPS Test" method_name="test_voltage" qual="false" upper="5.432" lower="5.167"/>
+    <test name="12V0 SMPS Test" method_name="test_voltage" qual="false" upper="12.3" lower="11.7"/>
+    <test name="3V3 SMPS Test" method_name="test_voltage" qual="false" upper="3.382" lower="3.217"/>
+    <test name="1V2 SMPS Test" method_name="test_voltage" qual="false" upper="5.432" lower="5.167"/>
+    <test name="2V048 LDO Test" method_name="test_voltage" qual="false" upper="5.432" lower="5.167"/>
+    <test name="3V3 LDO Test" method_name="test_voltage" qual="false" upper="5.432" lower="5.167"/>
+    <test name="30V SMPS Test" method_name="test_voltage" qual="false" upper="5.432" lower="5.167"/>
+    <test name="36V SMPS Test" method_name="test_voltage" qual="false" upper="5.432" lower="5.167"/>
+    
+    <test name="SPI1 Bus Test" method_name="test_spi1_bus" qual="true" upper="0" lower="0"/>
+    <test name="I2C Test" method_name="test_i2c" qual="true" upper="0" lower="0"/>
+    <test name="Blower Test" method_name="test_blower" qual="true" upper="0" lower="0"/>
+    <test name="PEEP Test" method_name="test_peep" qual="true" upper="0" lower="0"/>
+    <test name="DAC Test" method_name="test_dac" qual="true" upper="0" lower="0"/>
+    <test name="Oxygen Test" method_name="test_oxygen" qual="true" upper="0" lower="0"/>
+    
+    <test name="Ext02 Off Test" method_name="test_exto2_off" qual="false" upper="12.3" lower="11.7"/>
+    <test name="ExtO2 On Test" method_name="test_exto2_on" qual="false" upper="300" lower="-300"/>
+
+    <test name="Cough Test" method_name="test_cough" qual="true" upper="0" lower="0"/>
+    <test name="Suction Test" method_name="test_suction" qual="true" upper="0" lower="0"/>
+    <test name="Nebulizer Test" method_name="test_nebulizer" qual="true" upper="0" lower="0"/>
+
+    <test name="Low Speed Fan Voltage Test" method_name="test_low_fan_volt" qual="false" upper="7.5" lower="7.1"/>
+    <test name="Low Speed Fan Freuency Test" method_name="test_low_fan_freq" qual="false" upper="117" lower="115"/>
+    <test name="High Speed Fan Voltage Test" method_name="test_high_fan_volt" qual="false" upper="12.5" lower="10.5"/>
+    <test name="High Speed Fan Frequency Test" method_name="test_high_fan_freq" qual="false" upper="190" lower="170"/>
+
+    <test name="Alarm Silence Test" method_name="test_alarm_silence" qual="true" upper="0" lower="0"/>
+    <test name="Ambient Pressure Test" method_name="test_ambient_pressure" qual="false" upper="1.4" lower="1.4"/>
+    <test name="Ambient Temperature Test" method_name="test_ambient_temperature" qual="false" upper="20" lower="3"/>
+
+    <test name="Microphone Test" method_name="test_microphone" qual="true" upper="0" lower="0"/>
+    <test name="Speaker Test" method_name="test_speaker" qual="true" upper="0" lower="0"/>
+    <test name="Piezo Test" method_name="test_piezo" qual="true" upper="0" lower="0"/>
+
+    <test name="External AC Test" method_name="test_power_source" qual="true"  source ="0"/>
+    <test name="Internal Battery Test" method_name="test_power_source" qual="true" source ="1"/>
+    <test name="External Battery 1 Test" method_name="test_power_source" qual="true" source ="2"/>
+    <test name="External Battery 2 Test" method_name="test_power_source" qual="true" source ="3"/>
+
+    <test name="CV Charger Test" method_name="test_charger_cv" qual="true" target="1" cv="16.2" upper="1.2" lower="0.3"/>
+    <test name="CC Charger Test" method_name="test_charger_cc" qual="true" target="1" cv="16.2" upper="1.8" lower="1.2"/>
+
+
+  </specs>
+</Settings>
+
