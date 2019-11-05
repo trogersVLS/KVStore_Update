@@ -1,0 +1,1782 @@
+[11/01/2019 12:27:59] DHCP Server V2.5.2.3 started as Service
+[11/01/2019 12:28:00] NetworkAdapter Initialization returns 0
+[11/01/2019 12:28:00] Adapter 0 with IP address 10.10.0.1 found (pAdap=0x00ef52a0)
+[11/01/2019 12:28:00] Adapter 1 with IP address 10.10.3.102 found but not used
+[11/01/2019 12:28:53] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 12:28:53] DHCP message = DHCPDISCOVER
+[11/01/2019 12:28:53]    requested options: 1 3 6 12 15 28
+[11/01/2019 12:28:53] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 12:28:53] Client 7C-38-66-40-E2-20 is not configured
+[11/01/2019 12:28:53] Perform auto configuration
+[11/01/2019 12:28:53] IPPOOL_1: 10.10.0.5-255
+[11/01/2019 12:28:53] successfully matching the requested address
+[11/01/2019 12:28:53] Auto configuration succeeded: IP-Addr = 10.10.0.5
+[11/01/2019 12:28:53] Response: offer the configured IP address (lease time = 1800)
+[11/01/2019 12:28:53] Sending a broadcast response to the client
+[11/01/2019 12:28:53] Connection 0: sending top queue packet
+[11/01/2019 12:28:53] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 12:28:53] DHCP message = DHCPDISCOVER
+[11/01/2019 12:28:53]    requested options: 1 3 6 12 15 28
+[11/01/2019 12:28:53] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 12:28:53] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 12:28:53] Response: offer the configured IP address (lease time = 1800)
+[11/01/2019 12:28:53] Sending a broadcast response to the client
+[11/01/2019 12:28:53] Connection 0: sending top queue packet
+[11/01/2019 12:28:53] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 12:28:53] DHCP message = DHCPREQUEST
+[11/01/2019 12:28:53]    requested options: 1 3 6 12 15 28
+[11/01/2019 12:28:53] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 12:28:53] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 12:28:53] Response: hand out the configured IP address (lease time = 1800)
+[11/01/2019 12:28:53] Sending a broadcast response to the client
+[11/01/2019 12:28:53] Connection 0: sending top queue packet
+[11/01/2019 12:29:32] DHCP Server is terminating (ignore error messages that follow)
+[11/01/2019 12:29:32] recvfrom returns with error 10038
+[11/01/2019 12:29:32] DHCP Server terminated
+[11/01/2019 12:29:32] DHCP Server V2.5.2.3 started as Service
+[11/01/2019 12:29:32] NetworkAdapter Initialization returns 0
+[11/01/2019 12:29:32] Adapter 0 with IP address 10.10.0.1 found (pAdap=0x00ef34e0)
+[11/01/2019 12:30:51] DHCP Server is terminating (ignore error messages that follow)
+[11/01/2019 12:30:51] recvfrom returns with error 10038
+[11/01/2019 12:30:51] DHCP Server terminated
+[11/01/2019 12:30:51] DHCP Server V2.5.2.3 started as Service
+[11/01/2019 12:30:51] NetworkAdapter Initialization returns 0
+[11/01/2019 12:30:51] Adapter 0 with IP address 127.0.0.1 found but not used
+[11/01/2019 12:30:54] DHCP Server is terminating (ignore error messages that follow)
+[11/01/2019 12:30:54] DHCP Server terminated
+[11/01/2019 12:30:54] DHCP Server V2.5.2.3 started as Service
+[11/01/2019 12:30:54] NetworkAdapter Initialization returns 0
+[11/01/2019 12:30:54] Adapter 0 with IP address 10.10.0.2 found but not used
+[11/01/2019 12:59:27] Delete auto-config client 7C-38-66-40-E2-20
+[11/01/2019 13:55:30] DHCP Server is terminating (ignore error messages that follow)
+[11/01/2019 13:55:30] DHCP Server terminated
+[11/01/2019 13:55:30] DHCP Server V2.5.2.3 started as Service
+[11/01/2019 13:55:30] NetworkAdapter Initialization returns 0
+[11/01/2019 13:55:30] Adapter 0 with IP address 10.10.0.2 found but not used
+[11/01/2019 13:55:37] DHCP Server is terminating (ignore error messages that follow)
+[11/01/2019 13:55:37] DHCP Server terminated
+[11/01/2019 13:55:37] DHCP Server V2.5.2.3 started as Service
+[11/01/2019 13:55:37] NetworkAdapter Initialization returns 0
+[11/01/2019 13:55:37] Adapter 0 with IP address 10.10.0.2 found but not used
+[11/01/2019 14:01:10] DHCP Server is terminating (ignore error messages that follow)
+[11/01/2019 14:01:10] DHCP Server terminated
+[11/01/2019 14:01:10] DHCP Server V2.5.2.3 started as Service
+[11/01/2019 14:01:10] NetworkAdapter Initialization returns 0
+[11/01/2019 14:01:10] Adapter 0 with IP address 10.10.0.2 found but not used
+[11/01/2019 14:01:10] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/01/2019 14:01:13] DHCP Server is terminating (ignore error messages that follow)
+[11/01/2019 14:01:13] DHCP Server terminated
+[11/01/2019 14:01:13] DHCP Server V2.5.2.3 started as Service
+[11/01/2019 14:01:13] NetworkAdapter Initialization returns 0
+[11/01/2019 14:01:13] Adapter 0 with IP address 10.10.0.2 found but not used
+[11/01/2019 14:01:13] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/01/2019 14:01:51] DHCP Server is terminating (ignore error messages that follow)
+[11/01/2019 14:01:51] DHCP Server terminated
+[11/01/2019 14:03:32] DHCP Server V2.5.2.3 started as Service
+[11/01/2019 14:03:32] NetworkAdapter Initialization returns 0
+[11/01/2019 14:03:32] Adapter 0 with IP address 10.10.0.2 found but not used
+[11/01/2019 14:03:32] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/01/2019 14:12:49] DHCP Server is terminating (ignore error messages that follow)
+[11/01/2019 14:12:49] DHCP Server terminated
+[11/01/2019 14:13:30] DHCP Server V2.5.2.3 started as Service
+[11/01/2019 14:13:30] NetworkAdapter Initialization returns 0
+[11/01/2019 14:13:30] Adapter 0 with IP address 10.10.0.2 found but not used
+[11/01/2019 14:15:08] DHCP Server is terminating (ignore error messages that follow)
+[11/01/2019 14:15:08] DHCP Server terminated
+[11/01/2019 14:15:53] DHCP Server V2.5.2.3 started as Service
+[11/01/2019 14:15:53] NetworkAdapter Initialization returns 0
+[11/01/2019 14:15:53] Adapter 0 with IP address 10.10.0.1 found (pAdap=0x00f352a0)
+[11/01/2019 14:16:01] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 14:16:01] DHCP message = DHCPDISCOVER
+[11/01/2019 14:16:01]    requested options: 1 3 6 12 15 28
+[11/01/2019 14:16:01] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 14:16:01] Client 7C-38-66-40-E2-20 is not configured
+[11/01/2019 14:16:01] Perform auto configuration
+[11/01/2019 14:16:01] IPPOOL_1: 10.10.0.5-255
+[11/01/2019 14:16:01] successfully matching the requested address
+[11/01/2019 14:16:01] Auto configuration succeeded: IP-Addr = 10.10.0.5
+[11/01/2019 14:16:01] Response: offer the configured IP address (lease time = 1800)
+[11/01/2019 14:16:01] Sending a broadcast response to the client
+[11/01/2019 14:16:01] Connection 0: sending top queue packet
+[11/01/2019 14:16:01] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 14:16:01] DHCP message = DHCPREQUEST
+[11/01/2019 14:16:01]    requested options: 1 3 6 12 15 28
+[11/01/2019 14:16:01] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 14:16:01] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 14:16:01] Response: hand out the configured IP address (lease time = 1800)
+[11/01/2019 14:16:01] Sending a broadcast response to the client
+[11/01/2019 14:16:01] Connection 0: sending top queue packet
+[11/01/2019 14:16:32] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 14:16:32] DHCP message = DHCPDISCOVER
+[11/01/2019 14:16:32]    requested options: 1 3 6 12 15 28
+[11/01/2019 14:16:32] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 14:16:32] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 14:16:32] Response: offer the configured IP address (lease time = 1800)
+[11/01/2019 14:16:32] Sending a broadcast response to the client
+[11/01/2019 14:16:32] Connection 0: sending top queue packet
+[11/01/2019 14:16:32] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 14:16:32] DHCP message = DHCPDISCOVER
+[11/01/2019 14:16:32]    requested options: 1 3 6 12 15 28
+[11/01/2019 14:16:32] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 14:16:32] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 14:16:32] Response: offer the configured IP address (lease time = 1800)
+[11/01/2019 14:16:32] Sending a broadcast response to the client
+[11/01/2019 14:16:32] Connection 0: sending top queue packet
+[11/01/2019 14:16:32] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 14:16:32] DHCP message = DHCPREQUEST
+[11/01/2019 14:16:32]    requested options: 1 3 6 12 15 28
+[11/01/2019 14:16:32] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 14:16:32] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 14:16:33] Response: hand out the configured IP address (lease time = 1800)
+[11/01/2019 14:16:33] Sending a broadcast response to the client
+[11/01/2019 14:16:33] Connection 0: sending top queue packet
+[11/01/2019 14:19:06] DHCP Server is terminating (ignore error messages that follow)
+[11/01/2019 14:19:06] recvfrom returns with error 10038
+[11/01/2019 14:19:06] DHCP Server terminated
+[11/01/2019 14:19:06] DHCP Server V2.5.2.3 started as Service
+[11/01/2019 14:19:06] NetworkAdapter Initialization returns 0
+[11/01/2019 14:19:06] Adapter 0 with IP address 10.10.0.1 found (pAdap=0x00f35218)
+[11/01/2019 14:19:12] DHCP Server is terminating (ignore error messages that follow)
+[11/01/2019 14:19:12] recvfrom returns with error 10038
+[11/01/2019 14:19:12] DHCP Server terminated
+[11/01/2019 14:19:12] DHCP Server V2.5.2.3 started as Service
+[11/01/2019 14:19:12] NetworkAdapter Initialization returns 0
+[11/01/2019 14:19:12] Adapter 0 with IP address 10.10.0.1 found (pAdap=0x00f35238)
+[11/01/2019 14:20:34] DHCP Server is terminating (ignore error messages that follow)
+[11/01/2019 14:20:34] recvfrom returns with error 10038
+[11/01/2019 14:20:34] DHCP Server terminated
+[11/01/2019 14:20:34] DHCP Server V2.5.2.3 started as Service
+[11/01/2019 14:20:34] NetworkAdapter Initialization returns 0
+[11/01/2019 14:20:34] Adapter 0 with IP address 10.10.0.1 found (pAdap=0x00f35238)
+[11/01/2019 14:20:34] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/01/2019 14:21:22] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 14:21:22] DHCP message = DHCPDISCOVER
+[11/01/2019 14:21:22]    requested options: 1 3 6 12 15 28
+[11/01/2019 14:21:22] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 14:21:22] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 14:21:22] Response: offer the configured IP address (lease time = 1800)
+[11/01/2019 14:21:22] Sending a broadcast response to the client
+[11/01/2019 14:21:22] Connection 0: sending top queue packet
+[11/01/2019 14:21:22] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 14:21:22] DHCP message = DHCPDISCOVER
+[11/01/2019 14:21:22]    requested options: 1 3 6 12 15 28
+[11/01/2019 14:21:22] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 14:21:22] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 14:21:22] Response: offer the configured IP address (lease time = 1800)
+[11/01/2019 14:21:22] Sending a broadcast response to the client
+[11/01/2019 14:21:22] Connection 0: sending top queue packet
+[11/01/2019 14:21:22] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 14:21:22] DHCP message = DHCPREQUEST
+[11/01/2019 14:21:22]    requested options: 1 3 6 12 15 28
+[11/01/2019 14:21:22] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 14:21:22] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 14:21:22] Response: hand out the configured IP address (lease time = 1800)
+[11/01/2019 14:21:22] Sending a broadcast response to the client
+[11/01/2019 14:21:22] Connection 0: sending top queue packet
+[11/01/2019 14:22:09] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 14:22:09] DHCP message = DHCPDISCOVER
+[11/01/2019 14:22:09]    requested options: 1 3 6 12 15 28
+[11/01/2019 14:22:09] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 14:22:09] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 14:22:10] Response: offer the configured IP address (lease time = 1800)
+[11/01/2019 14:22:10] Sending a broadcast response to the client
+[11/01/2019 14:22:10] Connection 0: sending top queue packet
+[11/01/2019 14:22:10] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 14:22:10] DHCP message = DHCPDISCOVER
+[11/01/2019 14:22:10]    requested options: 1 3 6 12 15 28
+[11/01/2019 14:22:10] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 14:22:10] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 14:22:10] Response: offer the configured IP address (lease time = 1800)
+[11/01/2019 14:22:10] Sending a broadcast response to the client
+[11/01/2019 14:22:10] Connection 0: sending top queue packet
+[11/01/2019 14:22:10] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 14:22:10] DHCP message = DHCPREQUEST
+[11/01/2019 14:22:10]    requested options: 1 3 6 12 15 28
+[11/01/2019 14:22:10] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 14:22:10] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 14:22:10] Response: hand out the configured IP address (lease time = 1800)
+[11/01/2019 14:22:10] Sending a broadcast response to the client
+[11/01/2019 14:22:10] Connection 0: sending top queue packet
+[11/01/2019 14:23:39] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 14:23:39] DHCP message = DHCPDISCOVER
+[11/01/2019 14:23:39]    requested options: 1 3 6 12 15 28
+[11/01/2019 14:23:39] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 14:23:39] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 14:23:39] Response: offer the configured IP address (lease time = 1800)
+[11/01/2019 14:23:39] Sending a broadcast response to the client
+[11/01/2019 14:23:39] Connection 0: sending top queue packet
+[11/01/2019 14:23:39] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 14:23:39] DHCP message = DHCPDISCOVER
+[11/01/2019 14:23:39]    requested options: 1 3 6 12 15 28
+[11/01/2019 14:23:39] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 14:23:39] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 14:23:39] Response: offer the configured IP address (lease time = 1800)
+[11/01/2019 14:23:39] Sending a broadcast response to the client
+[11/01/2019 14:23:39] Connection 0: sending top queue packet
+[11/01/2019 14:23:39] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 14:23:39] DHCP message = DHCPREQUEST
+[11/01/2019 14:23:39]    requested options: 1 3 6 12 15 28
+[11/01/2019 14:23:39] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 14:23:39] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 14:23:39] Response: hand out the configured IP address (lease time = 1800)
+[11/01/2019 14:23:39] Sending a broadcast response to the client
+[11/01/2019 14:23:39] Connection 0: sending top queue packet
+[11/01/2019 14:24:33] DHCP Server is terminating (ignore error messages that follow)
+[11/01/2019 14:24:33] recvfrom returns with error 10038
+[11/01/2019 14:24:33] DHCP Server terminated
+[11/01/2019 14:24:33] DHCP Server V2.5.2.3 started as Service
+[11/01/2019 14:24:33] NetworkAdapter Initialization returns 0
+[11/01/2019 14:24:33] Adapter 0 with IP address 10.10.0.1 found (pAdap=0x00f30530)
+[11/01/2019 14:26:08] DHCP Server is terminating (ignore error messages that follow)
+[11/01/2019 14:26:08] recvfrom returns with error 10038
+[11/01/2019 14:26:08] DHCP Server terminated
+[11/01/2019 14:26:08] DHCP Server V2.5.2.3 started as Service
+[11/01/2019 14:26:08] NetworkAdapter Initialization returns 0
+[11/01/2019 14:26:08] Adapter 0 with IP address 10.10.0.1 found (pAdap=0x00f35238)
+[11/01/2019 14:26:08] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/01/2019 14:27:24] DHCP Server is terminating (ignore error messages that follow)
+[11/01/2019 14:27:24] recvfrom returns with error 10038
+[11/01/2019 14:27:24] DHCP Server terminated
+[11/01/2019 14:27:24] DHCP Server V2.5.2.3 started as Service
+[11/01/2019 14:27:24] NetworkAdapter Initialization returns 0
+[11/01/2019 14:27:24] Adapter 0 with IP address 10.10.0.1 found (pAdap=0x00f35238)
+[11/01/2019 14:38:38] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 14:38:38] DHCP message = DHCPREQUEST
+[11/01/2019 14:38:38]    requested options: 1 3 6 12 15 28
+[11/01/2019 14:38:38] Matching scope found for 10.10.0.5, index=1
+[11/01/2019 14:38:38] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 14:38:38] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 14:38:39] Response: hand out the configured IP address (lease time = 1800)
+[11/01/2019 14:38:39] Sending a unicast response to the client ciaddr=10.10.0.5
+[11/01/2019 14:38:39] Connection 0: sending top queue packet
+[11/01/2019 14:53:39] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 14:53:39] DHCP message = DHCPREQUEST
+[11/01/2019 14:53:39]    requested options: 1 3 6 12 15 28
+[11/01/2019 14:53:39] Matching scope found for 10.10.0.5, index=1
+[11/01/2019 14:53:39] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 14:53:39] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 14:53:39] Response: hand out the configured IP address (lease time = 1800)
+[11/01/2019 14:53:39] Sending a unicast response to the client ciaddr=10.10.0.5
+[11/01/2019 14:53:39] Connection 0: sending top queue packet
+[11/01/2019 15:08:39] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 15:08:39] DHCP message = DHCPREQUEST
+[11/01/2019 15:08:39]    requested options: 1 3 6 12 15 28
+[11/01/2019 15:08:39] Matching scope found for 10.10.0.5, index=1
+[11/01/2019 15:08:39] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 15:08:39] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 15:08:39] Response: hand out the configured IP address (lease time = 1800)
+[11/01/2019 15:08:39] Sending a unicast response to the client ciaddr=10.10.0.5
+[11/01/2019 15:08:39] Connection 0: sending top queue packet
+[11/01/2019 15:10:54] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 15:10:54] DHCP message = DHCPDISCOVER
+[11/01/2019 15:10:54]    requested options: 1 3 6 12 15 28
+[11/01/2019 15:10:54] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 15:10:54] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 15:10:54] Response: offer the configured IP address (lease time = 1800)
+[11/01/2019 15:10:54] Sending a broadcast response to the client
+[11/01/2019 15:10:54] Connection 0: sending top queue packet
+[11/01/2019 15:10:54] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 15:10:54] DHCP message = DHCPDISCOVER
+[11/01/2019 15:10:54]    requested options: 1 3 6 12 15 28
+[11/01/2019 15:10:54] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 15:10:54] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 15:10:54] Response: offer the configured IP address (lease time = 1800)
+[11/01/2019 15:10:54] Sending a broadcast response to the client
+[11/01/2019 15:10:54] Connection 0: sending top queue packet
+[11/01/2019 15:10:54] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 15:10:54] DHCP message = DHCPREQUEST
+[11/01/2019 15:10:54]    requested options: 1 3 6 12 15 28
+[11/01/2019 15:10:54] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 15:10:54] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 15:10:54] Response: hand out the configured IP address (lease time = 1800)
+[11/01/2019 15:10:54] Sending a broadcast response to the client
+[11/01/2019 15:10:54] Connection 0: sending top queue packet
+[11/01/2019 15:12:38] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 15:12:38] DHCP message = DHCPDISCOVER
+[11/01/2019 15:12:38]    requested options: 1 3 6 12 15 28
+[11/01/2019 15:12:38] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 15:12:38] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 15:12:38] Response: offer the configured IP address (lease time = 1800)
+[11/01/2019 15:12:38] Sending a broadcast response to the client
+[11/01/2019 15:12:38] Connection 0: sending top queue packet
+[11/01/2019 15:12:38] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 15:12:38] DHCP message = DHCPDISCOVER
+[11/01/2019 15:12:38]    requested options: 1 3 6 12 15 28
+[11/01/2019 15:12:38] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 15:12:38] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 15:12:38] Response: offer the configured IP address (lease time = 1800)
+[11/01/2019 15:12:38] Sending a broadcast response to the client
+[11/01/2019 15:12:38] Connection 0: sending top queue packet
+[11/01/2019 15:12:38] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 15:12:38] DHCP message = DHCPREQUEST
+[11/01/2019 15:12:38]    requested options: 1 3 6 12 15 28
+[11/01/2019 15:12:38] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 15:12:38] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 15:12:39] Response: hand out the configured IP address (lease time = 1800)
+[11/01/2019 15:12:39] Sending a broadcast response to the client
+[11/01/2019 15:12:39] Connection 0: sending top queue packet
+[11/01/2019 15:13:44] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 15:13:44] DHCP message = DHCPDISCOVER
+[11/01/2019 15:13:44]    requested options: 1 3 6 12 15 28
+[11/01/2019 15:13:44] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 15:13:44] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 15:13:44] Response: offer the configured IP address (lease time = 1800)
+[11/01/2019 15:13:44] Sending a broadcast response to the client
+[11/01/2019 15:13:44] Connection 0: sending top queue packet
+[11/01/2019 15:13:44] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 15:13:44] DHCP message = DHCPDISCOVER
+[11/01/2019 15:13:44]    requested options: 1 3 6 12 15 28
+[11/01/2019 15:13:44] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 15:13:44] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 15:13:44] Response: offer the configured IP address (lease time = 1800)
+[11/01/2019 15:13:44] Sending a broadcast response to the client
+[11/01/2019 15:13:44] Connection 0: sending top queue packet
+[11/01/2019 15:13:44] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 15:13:44] DHCP message = DHCPREQUEST
+[11/01/2019 15:13:44]    requested options: 1 3 6 12 15 28
+[11/01/2019 15:13:44] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 15:13:44] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 15:13:44] Response: hand out the configured IP address (lease time = 1800)
+[11/01/2019 15:13:44] Sending a broadcast response to the client
+[11/01/2019 15:13:44] Connection 0: sending top queue packet
+[11/01/2019 15:17:55] DHCP Server is terminating (ignore error messages that follow)
+[11/01/2019 15:17:55] recvfrom returns with error 10038
+[11/01/2019 15:17:55] DHCP Server terminated
+[11/01/2019 15:17:55] DHCP Server V2.5.2.3 started as Service
+[11/01/2019 15:17:55] NetworkAdapter Initialization returns 0
+[11/01/2019 15:17:55] Adapter 0 with IP address 10.10.0.1 found (pAdap=0x00f36e78)
+[11/01/2019 15:17:55] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/01/2019 15:22:19] DHCP Server is terminating (ignore error messages that follow)
+[11/01/2019 15:22:19] recvfrom returns with error 10038
+[11/01/2019 15:22:19] DHCP Server terminated
+[11/01/2019 15:22:19] DHCP Server V2.5.2.3 started as Service
+[11/01/2019 15:22:19] NetworkAdapter Initialization returns 0
+[11/01/2019 15:22:19] Adapter 0 with IP address 10.10.0.1 found (pAdap=0x00f30530)
+[11/01/2019 15:22:33] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 15:22:33] DHCP message = DHCPDISCOVER
+[11/01/2019 15:22:33]    requested options: 1 3 6 12 15 28
+[11/01/2019 15:22:33] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 15:22:33] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 15:22:33] Response: offer the configured IP address (lease time = 1800)
+[11/01/2019 15:22:33] Sending a broadcast response to the client
+[11/01/2019 15:22:33] Connection 0: sending top queue packet
+[11/01/2019 15:22:33] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 15:22:33] DHCP message = DHCPDISCOVER
+[11/01/2019 15:22:33]    requested options: 1 3 6 12 15 28
+[11/01/2019 15:22:33] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 15:22:33] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 15:22:33] Response: offer the configured IP address (lease time = 1800)
+[11/01/2019 15:22:33] Sending a broadcast response to the client
+[11/01/2019 15:22:33] Connection 0: sending top queue packet
+[11/01/2019 15:22:33] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 15:22:33] DHCP message = DHCPREQUEST
+[11/01/2019 15:22:33]    requested options: 1 3 6 12 15 28
+[11/01/2019 15:22:33] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 15:22:33] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 15:22:34] Response: hand out the configured IP address (lease time = 1800)
+[11/01/2019 15:22:34] Sending a broadcast response to the client
+[11/01/2019 15:22:34] Connection 0: sending top queue packet
+[11/01/2019 15:26:08] DHCP Server is terminating (ignore error messages that follow)
+[11/01/2019 15:26:08] recvfrom returns with error 10038
+[11/01/2019 15:26:08] DHCP Server terminated
+[11/01/2019 15:26:08] DHCP Server V2.5.2.3 started as Service
+[11/01/2019 15:26:08] NetworkAdapter Initialization returns 0
+[11/01/2019 15:26:08] Adapter 0 with IP address 10.10.0.1 found (pAdap=0x00f36e78)
+[11/01/2019 15:26:08] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/01/2019 15:37:34] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 15:37:34] DHCP message = DHCPREQUEST
+[11/01/2019 15:37:34]    requested options: 1 3 6 12 15 28
+[11/01/2019 15:37:34] Matching scope found for 10.10.0.5, index=1
+[11/01/2019 15:37:34] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 15:37:34] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 15:37:34] Response: hand out the configured IP address (lease time = 1800)
+[11/01/2019 15:37:34] Sending a unicast response to the client ciaddr=10.10.0.5
+[11/01/2019 15:37:34] Connection 0: sending top queue packet
+[11/01/2019 15:52:33] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 15:52:33] DHCP message = DHCPREQUEST
+[11/01/2019 15:52:33]    requested options: 1 3 6 12 15 28
+[11/01/2019 15:52:33] Matching scope found for 10.10.0.5, index=1
+[11/01/2019 15:52:33] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 15:52:33] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 15:52:34] Response: hand out the configured IP address (lease time = 1800)
+[11/01/2019 15:52:34] Sending a unicast response to the client ciaddr=10.10.0.5
+[11/01/2019 15:52:34] Connection 0: sending top queue packet
+[11/01/2019 16:07:33] Adapter 0 has recognized an incoming DHCP request
+[11/01/2019 16:07:33] DHCP message = DHCPREQUEST
+[11/01/2019 16:07:33]    requested options: 1 3 6 12 15 28
+[11/01/2019 16:07:33] Matching scope found for 10.10.0.5, index=1
+[11/01/2019 16:07:33] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/01/2019 16:07:33] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/01/2019 16:07:33] Response: hand out the configured IP address (lease time = 1800)
+[11/01/2019 16:07:33] Sending a unicast response to the client ciaddr=10.10.0.5
+[11/01/2019 16:07:33] Connection 0: sending top queue packet
+[11/01/2019 16:14:09] DHCP Server is terminating (ignore error messages that follow)
+[11/01/2019 16:14:09] recvfrom returns with error 10038
+[11/01/2019 16:14:09] DHCP Server terminated
+[11/03/2019 13:32:30] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 13:32:33] NetworkAdapter Initialization returns 0
+[11/03/2019 13:32:33] Adapter 0 with IP address 127.0.0.1 found but not used
+[11/03/2019 13:32:35] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 13:32:35] DHCP Server terminated
+[11/03/2019 13:32:35] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 13:32:35] NetworkAdapter Initialization returns 0
+[11/03/2019 13:32:35] Adapter 0 with IP address 127.0.0.1 found but not used
+[11/03/2019 13:32:37] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 13:32:37] DHCP Server terminated
+[11/03/2019 13:32:37] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 13:32:37] NetworkAdapter Initialization returns 0
+[11/03/2019 13:32:37] Adapter 0 with IP address 127.0.0.1 found but not used
+[11/03/2019 13:33:07] Delete auto-config client 7C-38-66-40-E2-20
+[11/03/2019 13:34:22] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 13:34:22] DHCP Server terminated
+[11/03/2019 13:34:22] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 13:34:22] NetworkAdapter Initialization returns 0
+[11/03/2019 13:34:22] Adapter 0 with IP address 127.0.0.1 found but not used
+[11/03/2019 13:36:44] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 13:36:44] DHCP Server terminated
+[11/03/2019 13:36:44] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 13:36:44] NetworkAdapter Initialization returns 0
+[11/03/2019 13:36:44] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/03/2019 13:36:47] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 13:36:47] DHCP Server terminated
+[11/03/2019 13:36:47] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 13:36:47] NetworkAdapter Initialization returns 0
+[11/03/2019 13:36:47] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/03/2019 15:39:05] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 15:39:05] DHCP Server terminated
+[11/03/2019 15:39:05] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 15:39:05] NetworkAdapter Initialization returns 0
+[11/03/2019 15:39:05] Adapter 0 with IP address 127.0.0.1 found but not used
+[11/03/2019 15:39:08] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 15:39:08] DHCP Server terminated
+[11/03/2019 15:39:08] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 15:39:08] NetworkAdapter Initialization returns 0
+[11/03/2019 15:39:08] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/03/2019 15:39:11] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 15:39:11] DHCP Server terminated
+[11/03/2019 15:39:11] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 15:39:11] NetworkAdapter Initialization returns 0
+[11/03/2019 15:39:11] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/03/2019 15:40:40] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 15:40:40] DHCP Server terminated
+[11/03/2019 15:40:40] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 15:40:40] NetworkAdapter Initialization returns 0
+[11/03/2019 15:40:40] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/03/2019 15:58:24] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 15:58:24] DHCP Server terminated
+[11/03/2019 15:58:24] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 15:58:24] NetworkAdapter Initialization returns 0
+[11/03/2019 15:58:24] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/03/2019 16:29:30] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 16:29:30] DHCP Server terminated
+[11/03/2019 16:29:30] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 16:29:30] NetworkAdapter Initialization returns 0
+[11/03/2019 16:29:30] Adapter 0 with IP address 127.0.0.1 found but not used
+[11/03/2019 16:29:34] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 16:29:34] DHCP Server terminated
+[11/03/2019 16:29:34] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 16:29:34] NetworkAdapter Initialization returns 0
+[11/03/2019 16:29:34] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/03/2019 17:12:32] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 17:12:32] DHCP Server terminated
+[11/03/2019 17:12:32] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 17:12:32] NetworkAdapter Initialization returns 0
+[11/03/2019 17:12:32] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/03/2019 17:18:59] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 17:18:59] DHCP Server terminated
+[11/03/2019 17:18:59] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 17:18:59] NetworkAdapter Initialization returns 0
+[11/03/2019 17:18:59] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/03/2019 17:41:14] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 17:41:14] DHCP Server terminated
+[11/03/2019 17:41:14] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 17:41:14] NetworkAdapter Initialization returns 0
+[11/03/2019 17:41:14] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/03/2019 17:42:34] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 17:42:34] DHCP Server terminated
+[11/03/2019 17:42:34] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 17:42:34] NetworkAdapter Initialization returns 0
+[11/03/2019 17:42:34] Adapter 0 with IP address 127.0.0.1 found but not used
+[11/03/2019 17:42:39] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 17:42:39] DHCP Server terminated
+[11/03/2019 17:42:39] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 17:42:39] NetworkAdapter Initialization returns 0
+[11/03/2019 17:42:39] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/03/2019 18:54:22] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 18:54:22] DHCP Server terminated
+[11/03/2019 18:54:22] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 18:54:22] NetworkAdapter Initialization returns 0
+[11/03/2019 18:54:22] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/03/2019 20:38:31] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 20:38:33] DHCP Server terminated
+[11/03/2019 20:38:33] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 20:38:33] NetworkAdapter Initialization returns 0
+[11/03/2019 20:38:33] Adapter 0 with IP address 127.0.0.1 found but not used
+[11/03/2019 20:38:34] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 20:38:34] DHCP Server terminated
+[11/03/2019 20:38:34] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 20:38:35] NetworkAdapter Initialization returns 0
+[11/03/2019 20:38:35] Adapter 0 with IP address 127.0.0.1 found but not used
+[11/03/2019 20:38:43] DHCP Server is terminating (ignore error messages that follow)
+[11/03/2019 20:38:43] DHCP Server terminated
+[11/03/2019 20:38:43] DHCP Server V2.5.2.3 started as Service
+[11/03/2019 20:38:43] NetworkAdapter Initialization returns 0
+[11/03/2019 20:38:43] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/04/2019 00:40:45] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 00:40:45] DHCP Server terminated
+[11/04/2019 00:40:45] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 00:40:45] NetworkAdapter Initialization returns 0
+[11/04/2019 00:40:45] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/04/2019 01:30:13] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 01:30:13] DHCP Server terminated
+[11/04/2019 01:30:13] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 01:30:13] NetworkAdapter Initialization returns 0
+[11/04/2019 01:30:13] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/04/2019 01:30:38] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 01:30:38] DHCP Server terminated
+[11/04/2019 01:30:38] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 01:30:38] NetworkAdapter Initialization returns 0
+[11/04/2019 01:30:38] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/04/2019 02:09:21] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 02:09:21] DHCP Server terminated
+[11/04/2019 02:09:21] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 02:09:21] NetworkAdapter Initialization returns 0
+[11/04/2019 02:09:21] Adapter 0 with IP address 127.0.0.1 found but not used
+[11/04/2019 02:09:26] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 02:09:26] DHCP Server terminated
+[11/04/2019 02:09:26] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 02:09:26] NetworkAdapter Initialization returns 0
+[11/04/2019 02:09:26] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/04/2019 02:20:10] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 02:20:10] DHCP Server terminated
+[11/04/2019 02:20:10] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 02:20:10] NetworkAdapter Initialization returns 0
+[11/04/2019 02:20:10] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/04/2019 03:10:31] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 03:10:31] DHCP Server terminated
+[11/04/2019 03:10:31] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 03:10:31] NetworkAdapter Initialization returns 0
+[11/04/2019 03:10:31] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/04/2019 04:51:08] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 04:51:08] DHCP Server terminated
+[11/04/2019 04:51:08] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 04:51:08] NetworkAdapter Initialization returns 0
+[11/04/2019 04:51:08] Adapter 0 with IP address 127.0.0.1 found but not used
+[11/04/2019 04:51:13] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 04:51:13] DHCP Server terminated
+[11/04/2019 04:51:13] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 04:51:13] NetworkAdapter Initialization returns 0
+[11/04/2019 04:51:13] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/04/2019 06:08:42] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 06:08:42] DHCP Server terminated
+[11/04/2019 06:08:42] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 06:08:42] NetworkAdapter Initialization returns 0
+[11/04/2019 06:08:42] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/04/2019 06:09:13] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 06:09:13] DHCP Server terminated
+[11/04/2019 06:09:13] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 06:09:13] NetworkAdapter Initialization returns 0
+[11/04/2019 06:09:13] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/04/2019 06:32:14] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 06:32:14] DHCP Server terminated
+[11/04/2019 06:32:14] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 06:32:14] NetworkAdapter Initialization returns 0
+[11/04/2019 06:32:14] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/04/2019 07:09:10] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 07:09:10] DHCP Server terminated
+[11/04/2019 07:09:10] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 07:09:10] NetworkAdapter Initialization returns 0
+[11/04/2019 07:09:10] Adapter 0 with IP address 192.168.0.35 found but not used
+[11/04/2019 07:54:18] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 07:54:18] DHCP Server terminated
+[11/04/2019 07:54:18] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 07:54:18] NetworkAdapter Initialization returns 0
+[11/04/2019 07:54:18] Adapter 0 with IP address 127.0.0.1 found but not used
+[11/04/2019 08:27:26] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 08:27:26] DHCP Server terminated
+[11/04/2019 08:27:26] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 08:27:26] NetworkAdapter Initialization returns 0
+[11/04/2019 08:27:26] Adapter 0 with IP address 127.0.0.1 found but not used
+[11/04/2019 08:27:32] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 08:27:32] DHCP Server terminated
+[11/04/2019 08:27:32] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 08:27:32] NetworkAdapter Initialization returns 0
+[11/04/2019 08:27:32] Adapter 0 with IP address 127.0.0.1 found but not used
+[11/04/2019 08:27:35] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 08:27:35] DHCP Server terminated
+[11/04/2019 08:27:35] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 08:27:35] NetworkAdapter Initialization returns 0
+[11/04/2019 08:27:35] Adapter 0 with IP address 10.10.2.109 found but not used
+[11/04/2019 08:27:38] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 08:27:38] DHCP Server terminated
+[11/04/2019 08:27:38] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 08:27:38] NetworkAdapter Initialization returns 0
+[11/04/2019 08:27:38] Adapter 0 with IP address 10.10.2.109 found but not used
+[11/04/2019 07:28:41] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 07:28:41] DHCP Server terminated
+[11/04/2019 07:28:41] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 07:28:41] NetworkAdapter Initialization returns 0
+[11/04/2019 07:28:41] Adapter 0 with IP address 10.10.2.109 found but not used
+[11/04/2019 07:29:53] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 07:29:53] DHCP Server terminated
+[11/04/2019 07:29:53] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 07:29:53] NetworkAdapter Initialization returns 0
+[11/04/2019 07:29:53] Adapter 0 with IP address 10.10.2.109 found but not used
+[11/04/2019 07:42:05] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 07:42:05] DHCP Server terminated
+[11/04/2019 07:42:05] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 07:42:05] NetworkAdapter Initialization returns 0
+[11/04/2019 07:42:05] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 07:42:05] Adapter 1 with IP address 10.10.2.109 found but not used
+[11/04/2019 07:42:08] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 07:42:08] DHCP Server terminated
+[11/04/2019 07:42:08] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 07:42:09] NetworkAdapter Initialization returns 0
+[11/04/2019 07:42:09] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 07:42:09] Adapter 1 with IP address 10.10.2.109 found but not used
+[11/04/2019 07:45:35] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 07:45:35] DHCP Server terminated
+[11/04/2019 07:45:35] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 07:45:36] NetworkAdapter Initialization returns 0
+[11/04/2019 07:45:36] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 07:49:26] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 07:49:26] DHCP Server terminated
+[11/04/2019 07:49:26] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 07:49:26] NetworkAdapter Initialization returns 0
+[11/04/2019 07:49:26] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 07:49:32] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 07:49:32] DHCP Server terminated
+[11/04/2019 07:49:32] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 07:49:32] NetworkAdapter Initialization returns 0
+[11/04/2019 07:49:32] Adapter 0 with IP address 10.10.0.1 found (pAdap=0x00e20590)
+[11/04/2019 07:49:32] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 07:49:50] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 07:49:50] DHCP message = DHCPDISCOVER
+[11/04/2019 07:49:50]    requested options: 1 3 6 12 15 28
+[11/04/2019 07:49:50] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 07:49:50] Client 7C-38-66-40-E2-20 is not configured
+[11/04/2019 07:49:50] Perform auto configuration
+[11/04/2019 07:49:50] IPPOOL_1: 10.10.0.5-255
+[11/04/2019 07:49:50] successfully matching the requested address
+[11/04/2019 07:49:50] Auto configuration succeeded: IP-Addr = 10.10.0.5
+[11/04/2019 07:49:50] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 07:49:50] Sending a broadcast response to the client
+[11/04/2019 07:49:50] Connection 0: sending top queue packet
+[11/04/2019 07:49:50] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 07:49:50] DHCP message = DHCPREQUEST
+[11/04/2019 07:49:50]    requested options: 1 3 6 12 15 28
+[11/04/2019 07:49:50] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 07:49:50] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/04/2019 07:49:50] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 07:49:50] Sending a broadcast response to the client
+[11/04/2019 07:49:50] Connection 0: sending top queue packet
+[11/04/2019 07:49:56] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 07:49:56] recvfrom returns with error 10038
+[11/04/2019 07:49:56] DHCP Server terminated
+[11/04/2019 07:50:04] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 07:50:04] NetworkAdapter Initialization returns 0
+[11/04/2019 07:50:04] Adapter 0 with IP address 10.10.0.1 found (pAdap=0x00f95218)
+[11/04/2019 07:50:04] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 07:51:33] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 07:51:33] recvfrom returns with error 10038
+[11/04/2019 07:51:33] DHCP Server terminated
+[11/04/2019 07:51:33] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 07:51:33] NetworkAdapter Initialization returns 0
+[11/04/2019 07:51:33] Adapter 0 with IP address 10.10.0.1 found (pAdap=0x00f99fa0)
+[11/04/2019 07:51:41] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 07:51:41] recvfrom returns with error 10038
+[11/04/2019 07:51:41] DHCP Server terminated
+[11/04/2019 07:51:41] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 07:51:41] NetworkAdapter Initialization returns 0
+[11/04/2019 07:51:41] Adapter 0 with IP address 10.10.0.1 found (pAdap=0x00f99fa0)
+[11/04/2019 07:51:41] Adapter 1 with IP address 10.10.2.109 found but not used
+[11/04/2019 08:04:51] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 08:04:51] DHCP message = DHCPREQUEST
+[11/04/2019 08:04:51]    requested options: 1 3 6 12 15 28
+[11/04/2019 08:04:51] Matching scope found for 10.10.0.5, index=1
+[11/04/2019 08:04:51] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 08:04:51] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/04/2019 08:04:51] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 08:04:51] Sending a unicast response to the client ciaddr=10.10.0.5
+[11/04/2019 08:04:51] Connection 0: sending top queue packet
+[11/04/2019 08:06:52] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 08:06:52] recvfrom returns with error 10038
+[11/04/2019 08:06:52] DHCP Server terminated
+[11/04/2019 08:06:52] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 08:06:52] NetworkAdapter Initialization returns 0
+[11/04/2019 08:06:52] Adapter 0 with IP address 10.10.0.1 found (pAdap=0x00f99fa0)
+[11/04/2019 08:19:50] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 08:19:50] DHCP message = DHCPREQUEST
+[11/04/2019 08:19:50]    requested options: 1 3 6 12 15 28
+[11/04/2019 08:19:50] Matching scope found for 10.10.0.5, index=1
+[11/04/2019 08:19:50] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 08:19:50] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/04/2019 08:19:50] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 08:19:50] Sending a unicast response to the client ciaddr=10.10.0.5
+[11/04/2019 08:19:50] Connection 0: sending top queue packet
+[11/04/2019 08:34:51] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 08:34:51] DHCP message = DHCPREQUEST
+[11/04/2019 08:34:51]    requested options: 1 3 6 12 15 28
+[11/04/2019 08:34:51] Matching scope found for 10.10.0.5, index=1
+[11/04/2019 08:34:51] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 08:34:51] Client 7C-38-66-40-E2-20 is configured with the IP address 10.10.0.5
+[11/04/2019 08:34:51] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 08:34:51] Sending a unicast response to the client ciaddr=10.10.0.5
+[11/04/2019 08:34:51] Connection 0: sending top queue packet
+[11/04/2019 08:43:21] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 08:43:21] recvfrom returns with error 10038
+[11/04/2019 08:43:21] DHCP Server terminated
+[11/04/2019 08:48:05] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 08:48:05] NetworkAdapter Initialization returns 0
+[11/04/2019 08:48:05] Adapter 0 with IP address 10.255.255.0 found but not used
+[11/04/2019 08:48:05] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 08:48:07] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 08:48:07] DHCP Server terminated
+[11/04/2019 08:48:10] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 08:48:11] NetworkAdapter Initialization returns 0
+[11/04/2019 08:48:11] Adapter 0 with IP address 10.255.255.0 found but not used
+[11/04/2019 08:48:11] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 08:49:34] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 08:49:34] DHCP Server terminated
+[11/04/2019 08:50:45] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 08:50:45] NetworkAdapter Initialization returns 0
+[11/04/2019 08:50:45] Adapter 0 with IP address 10.255.255.0 found but not used
+[11/04/2019 08:50:45] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 08:51:00] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 08:51:00] DHCP Server terminated
+[11/04/2019 08:51:00] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 08:51:00] NetworkAdapter Initialization returns 0
+[11/04/2019 08:51:00] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 08:51:07] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 08:51:07] DHCP Server terminated
+[11/04/2019 08:51:07] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 08:51:08] NetworkAdapter Initialization returns 0
+[11/04/2019 08:51:08] Adapter 0 with IP address 10.255.255.0 found but not used
+[11/04/2019 08:51:08] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 08:52:20] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 08:52:20] DHCP Server terminated
+[11/04/2019 08:52:21] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 08:52:21] NetworkAdapter Initialization returns 0
+[11/04/2019 08:52:21] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 08:52:27] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 08:52:27] DHCP Server terminated
+[11/04/2019 08:52:35] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 08:52:35] NetworkAdapter Initialization returns 0
+[11/04/2019 08:52:35] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 08:52:45] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 08:52:45] DHCP Server terminated
+[11/04/2019 08:52:45] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 08:52:46] NetworkAdapter Initialization returns 0
+[11/04/2019 08:52:46] Adapter 0 with IP address 10.255.255.0 found but not used
+[11/04/2019 08:52:46] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 08:53:40] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 08:53:40] DHCP Server terminated
+[11/04/2019 08:56:24] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 08:56:24] NetworkAdapter Initialization returns 0
+[11/04/2019 08:56:24] Adapter 0 with IP address 10.10.20.0 found but not used
+[11/04/2019 08:56:43] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 08:56:43] DHCP Server terminated
+[11/04/2019 08:56:43] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 08:56:43] NetworkAdapter Initialization returns 0
+[11/04/2019 08:56:43] Adapter 0 with IP address 127.0.0.1 found but not used
+[11/04/2019 08:56:51] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 08:56:51] DHCP Server terminated
+[11/04/2019 08:56:51] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 08:56:52] NetworkAdapter Initialization returns 0
+[11/04/2019 08:56:52] Adapter 0 with IP address 10.10.20.0 found but not used
+[11/04/2019 08:57:44] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 08:57:44] DHCP Server terminated
+[11/04/2019 08:58:39] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 08:58:39] NetworkAdapter Initialization returns 0
+[11/04/2019 08:58:39] Adapter 0 with IP address 10.10.20.0 found but not used
+[11/04/2019 08:59:09] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 08:59:09] DHCP Server terminated
+[11/04/2019 08:59:09] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 08:59:09] NetworkAdapter Initialization returns 0
+[11/04/2019 08:59:09] Adapter 0 with IP address 127.0.0.1 found but not used
+[11/04/2019 08:59:17] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 08:59:17] DHCP Server terminated
+[11/04/2019 08:59:17] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 08:59:17] NetworkAdapter Initialization returns 0
+[11/04/2019 08:59:17] Adapter 0 with IP address 10.10.20.0 found but not used
+[11/04/2019 09:00:06] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 09:00:06] DHCP Server terminated
+[11/04/2019 09:00:06] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 09:00:06] NetworkAdapter Initialization returns 0
+[11/04/2019 09:00:06] Adapter 0 with IP address 127.0.0.1 found but not used
+[11/04/2019 09:00:08] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 09:00:08] DHCP Server terminated
+[11/04/2019 09:00:08] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 09:00:08] NetworkAdapter Initialization returns 0
+[11/04/2019 09:00:09] Adapter 0 with IP address 10.10.0.0 found but not used
+[11/04/2019 09:00:11] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 09:00:11] DHCP Server terminated
+[11/04/2019 09:00:14] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 09:00:14] NetworkAdapter Initialization returns 0
+[11/04/2019 09:00:14] Adapter 0 with IP address 10.10.0.0 found but not used
+[11/04/2019 09:01:34] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 09:01:34] DHCP Server terminated
+[11/04/2019 09:01:40] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 09:01:40] NetworkAdapter Initialization returns 0
+[11/04/2019 09:01:40] Adapter 0 with IP address 10.10.0.0 found but not used
+[11/04/2019 09:02:16] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 09:02:16] DHCP Server terminated
+[11/04/2019 09:02:22] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 09:02:22] NetworkAdapter Initialization returns 0
+[11/04/2019 09:02:22] Adapter 0 with IP address 10.10.0.0 found but not used
+[11/04/2019 09:02:58] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 09:02:58] DHCP Server terminated
+[11/04/2019 09:03:27] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 09:03:27] NetworkAdapter Initialization returns 0
+[11/04/2019 09:03:27] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x005b5290)
+[11/04/2019 09:03:49] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 09:03:49] DHCP message = DHCPDISCOVER
+[11/04/2019 09:03:49]    requested options: 1 3 6 12 15 28
+[11/04/2019 09:03:49] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 09:03:49] Client 7C-38-66-40-E2-20 is not configured
+[11/04/2019 09:03:49] Perform auto configuration
+[11/04/2019 09:03:49] IPPOOL_1: 10.0.0.1-255
+[11/04/2019 09:03:49] successfully matching the requested address
+[11/04/2019 09:03:49] Auto configuration succeeded: IP-Addr = 10.0.0.1
+[11/04/2019 09:03:49] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 09:03:49] Sending a broadcast response to the client
+[11/04/2019 09:03:49] Connection 0: sending top queue packet
+[11/04/2019 09:03:49] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 09:03:49] DHCP message = DHCPDISCOVER
+[11/04/2019 09:03:49]    requested options: 1 3 6 12 15 28
+[11/04/2019 09:03:49] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 09:03:49] Client 7C-38-66-40-E2-20 is configured with the IP address 10.0.0.1
+[11/04/2019 09:03:50] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 09:03:50] Sending a broadcast response to the client
+[11/04/2019 09:03:50] Connection 0: sending top queue packet
+[11/04/2019 09:03:50] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 09:03:50] DHCP message = DHCPREQUEST
+[11/04/2019 09:03:50]    requested options: 1 3 6 12 15 28
+[11/04/2019 09:03:50] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 09:03:50] Client 7C-38-66-40-E2-20 is configured with the IP address 10.0.0.1
+[11/04/2019 09:03:50] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 09:03:50] Sending a broadcast response to the client
+[11/04/2019 09:03:50] Connection 0: sending top queue packet
+[11/04/2019 09:04:10] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 09:04:10] recvfrom returns with error 10038
+[11/04/2019 09:04:10] DHCP Server terminated
+[11/04/2019 09:04:55] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 09:04:55] NetworkAdapter Initialization returns 0
+[11/04/2019 09:04:55] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x00fc52a0)
+[11/04/2019 09:05:16] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 09:05:16] recvfrom returns with error 10038
+[11/04/2019 09:05:16] DHCP Server terminated
+[11/04/2019 09:05:28] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 09:05:28] NetworkAdapter Initialization returns 0
+[11/04/2019 09:05:28] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x00e952a0)
+[11/04/2019 09:05:38] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 09:05:38] recvfrom returns with error 10038
+[11/04/2019 09:05:38] DHCP Server terminated
+[11/04/2019 09:06:15] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 09:06:15] NetworkAdapter Initialization returns 0
+[11/04/2019 09:06:15] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x00ef52a0)
+[11/04/2019 09:06:47] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 09:06:47] recvfrom returns with error 10038
+[11/04/2019 09:06:47] DHCP Server terminated
+[11/04/2019 09:06:47] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 09:06:47] NetworkAdapter Initialization returns 0
+[11/04/2019 09:06:47] Adapter 0 with IP address 127.0.0.1 found but not used
+[11/04/2019 09:06:55] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 09:06:55] DHCP Server terminated
+[11/04/2019 09:06:55] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 09:06:55] NetworkAdapter Initialization returns 0
+[11/04/2019 09:06:55] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x00ef8208)
+[11/04/2019 09:07:03] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 09:07:03] DHCP message = DHCPDISCOVER
+[11/04/2019 09:07:03]    requested options: 1 3 6 12 15 28
+[11/04/2019 09:07:03] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 09:07:03] Client 7C-38-66-40-E2-20 is not configured
+[11/04/2019 09:07:03] Perform auto configuration
+[11/04/2019 09:07:03] IPPOOL_1: 10.255.255.1-255
+[11/04/2019 09:07:03] successfully matching the requested address
+[11/04/2019 09:07:03] Auto configuration succeeded: IP-Addr = 10.255.255.1
+[11/04/2019 09:07:03] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 09:07:03] Sending a broadcast response to the client
+[11/04/2019 09:07:03] Connection 0: sending top queue packet
+[11/04/2019 09:07:03] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 09:07:03] DHCP message = DHCPDISCOVER
+[11/04/2019 09:07:03]    requested options: 1 3 6 12 15 28
+[11/04/2019 09:07:03] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 09:07:03] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 09:07:04] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 09:07:04] Sending a broadcast response to the client
+[11/04/2019 09:07:04] Connection 0: sending top queue packet
+[11/04/2019 09:07:04] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 09:07:04] DHCP message = DHCPREQUEST
+[11/04/2019 09:07:04]    requested options: 1 3 6 12 15 28
+[11/04/2019 09:07:04] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 09:07:04] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 09:07:04] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 09:07:04] Sending a broadcast response to the client
+[11/04/2019 09:07:04] Connection 0: sending top queue packet
+[11/04/2019 09:10:04] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 09:10:04] recvfrom returns with error 10038
+[11/04/2019 09:10:04] DHCP Server terminated
+[11/04/2019 09:10:04] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 09:10:04] NetworkAdapter Initialization returns 0
+[11/04/2019 09:10:04] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x00ef84c8)
+[11/04/2019 09:10:04] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 09:15:07] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 09:15:07] recvfrom returns with error 10038
+[11/04/2019 09:15:07] DHCP Server terminated
+[11/04/2019 09:15:07] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 09:15:07] NetworkAdapter Initialization returns 0
+[11/04/2019 09:15:07] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 09:15:17] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 09:15:17] DHCP Server terminated
+[11/04/2019 09:15:17] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 09:15:18] NetworkAdapter Initialization returns 0
+[11/04/2019 09:15:18] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x00ef8448)
+[11/04/2019 09:15:18] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 09:15:23] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 09:15:23] DHCP message = DHCPDISCOVER
+[11/04/2019 09:15:23]    requested options: 1 3 6 12 15 28
+[11/04/2019 09:15:23] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 09:15:23] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 09:15:24] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 09:15:24] Sending a broadcast response to the client
+[11/04/2019 09:15:24] Connection 0: sending top queue packet
+[11/04/2019 09:15:24] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 09:15:24] DHCP message = DHCPDISCOVER
+[11/04/2019 09:15:24]    requested options: 1 3 6 12 15 28
+[11/04/2019 09:15:24] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 09:15:24] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 09:15:24] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 09:15:24] Sending a broadcast response to the client
+[11/04/2019 09:15:24] Connection 0: sending top queue packet
+[11/04/2019 09:15:24] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 09:15:24] DHCP message = DHCPREQUEST
+[11/04/2019 09:15:24]    requested options: 1 3 6 12 15 28
+[11/04/2019 09:15:24] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 09:15:24] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 09:15:24] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 09:15:24] Sending a broadcast response to the client
+[11/04/2019 09:15:24] Connection 0: sending top queue packet
+[11/04/2019 09:16:32] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 09:16:32] DHCP message = DHCPDISCOVER
+[11/04/2019 09:16:32]    requested options: 1 3 6 12 15 28
+[11/04/2019 09:16:32] Lookup client data for physical address "7C-38-66-40-C0-1D" / client_id "7C-38-66-40-C0-1D"
+[11/04/2019 09:16:32] Client 7C-38-66-40-C0-1D is not configured
+[11/04/2019 09:16:32] Perform auto configuration
+[11/04/2019 09:16:32] IPPOOL_1: 10.255.255.1-255
+[11/04/2019 09:16:32] Auto configuration succeeded: IP-Addr = 10.255.255.2
+[11/04/2019 09:16:33] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 09:16:33] Sending a broadcast response to the client
+[11/04/2019 09:16:33] Connection 0: sending top queue packet
+[11/04/2019 09:16:33] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 09:16:33] DHCP message = DHCPDISCOVER
+[11/04/2019 09:16:33]    requested options: 1 3 6 12 15 28
+[11/04/2019 09:16:33] Lookup client data for physical address "7C-38-66-40-C0-1D" / client_id "7C-38-66-40-C0-1D"
+[11/04/2019 09:16:33] Client 7C-38-66-40-C0-1D is configured with the IP address 10.255.255.2
+[11/04/2019 09:16:33] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 09:16:33] Sending a broadcast response to the client
+[11/04/2019 09:16:33] Connection 0: sending top queue packet
+[11/04/2019 09:16:33] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 09:16:33] DHCP message = DHCPREQUEST
+[11/04/2019 09:16:33]    requested options: 1 3 6 12 15 28
+[11/04/2019 09:16:33] Lookup client data for physical address "7C-38-66-40-C0-1D" / client_id "7C-38-66-40-C0-1D"
+[11/04/2019 09:16:33] Client 7C-38-66-40-C0-1D is configured with the IP address 10.255.255.2
+[11/04/2019 09:16:33] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 09:16:33] Sending a broadcast response to the client
+[11/04/2019 09:16:33] Connection 0: sending top queue packet
+[11/04/2019 09:31:33] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 09:31:33] DHCP message = DHCPREQUEST
+[11/04/2019 09:31:33]    requested options: 1 3 6 12 15 28
+[11/04/2019 09:31:33] Matching scope found for 10.255.255.2, index=1
+[11/04/2019 09:31:33] Lookup client data for physical address "7C-38-66-40-C0-1D" / client_id "7C-38-66-40-C0-1D"
+[11/04/2019 09:31:33] Client 7C-38-66-40-C0-1D is configured with the IP address 10.255.255.2
+[11/04/2019 09:31:33] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 09:31:33] Sending a unicast response to the client ciaddr=10.255.255.2
+[11/04/2019 09:31:33] Connection 0: sending top queue packet
+[11/04/2019 09:36:58] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 09:36:58] NetworkAdapter Initialization returns 0
+[11/04/2019 09:36:58] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x0059b2c0)
+[11/04/2019 09:36:58] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 09:45:54] Delete auto-config client 7C-38-66-40-E2-20
+[11/04/2019 09:46:33] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 09:46:33] DHCP message = DHCPREQUEST
+[11/04/2019 09:46:33]    requested options: 1 3 6 12 15 28
+[11/04/2019 09:46:33] Matching scope found for 10.255.255.2, index=1
+[11/04/2019 09:46:33] Lookup client data for physical address "7C-38-66-40-C0-1D" / client_id "7C-38-66-40-C0-1D"
+[11/04/2019 09:46:33] Client 7C-38-66-40-C0-1D is configured with the IP address 10.255.255.2
+[11/04/2019 09:46:34] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 09:46:34] Sending a unicast response to the client ciaddr=10.255.255.2
+[11/04/2019 09:46:34] Connection 0: sending top queue packet
+[11/04/2019 09:51:37] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 09:51:37] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 09:51:37] recvfrom returns with error 10038
+[11/04/2019 09:51:37] recvfrom returns with error 10038
+[11/04/2019 09:51:37] DHCP Server terminated
+[11/04/2019 09:51:37] DHCP Server terminated
+[11/04/2019 09:51:37] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 09:51:37] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 09:51:38] NetworkAdapter Initialization returns 0
+[11/04/2019 09:51:38] NetworkAdapter Initialization returns 0
+[11/04/2019 09:51:38] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x00ef81a8)
+[11/04/2019 09:51:38] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 09:51:38] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x0059b2c0)
+[11/04/2019 09:51:38] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 09:51:44] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 09:51:44] recvfrom returns with error 10038
+[11/04/2019 09:51:44] recvfrom returns with error 10038
+[11/04/2019 09:51:44] DHCP Server terminated
+[11/04/2019 09:51:44] DHCP Server terminated
+[11/04/2019 09:51:44] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 09:51:44] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 09:51:44] NetworkAdapter Initialization returns 0
+[11/04/2019 09:51:44] NetworkAdapter Initialization returns 0
+[11/04/2019 09:51:44] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x00ef8288)
+[11/04/2019 09:51:44] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x0059b440)
+[11/04/2019 09:51:44] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 09:51:44] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 10:01:33] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 10:01:33] DHCP message = DHCPREQUEST
+[11/04/2019 10:01:33]    requested options: 1 3 6 12 15 28
+[11/04/2019 10:01:33] Matching scope found for 10.255.255.2, index=1
+[11/04/2019 10:01:33] Lookup client data for physical address "7C-38-66-40-C0-1D" / client_id "7C-38-66-40-C0-1D"
+[11/04/2019 10:01:33] Client 7C-38-66-40-C0-1D is configured with the IP address 10.255.255.2
+[11/04/2019 10:01:33] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 10:01:33] Sending a unicast response to the client ciaddr=10.255.255.2
+[11/04/2019 10:01:33] Connection 0: sending top queue packet
+[11/04/2019 10:22:28] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 10:22:28] DHCP message = DHCPDISCOVER
+[11/04/2019 10:22:28] DHCP message = DHCPDISCOVER
+[11/04/2019 10:22:28]    requested options: 1 3 6 12 15 28
+[11/04/2019 10:22:28]    requested options: 1 3 6 12 15 28
+[11/04/2019 10:22:28] Lookup client data for physical address "7C-38-66-40-C0-1D" / client_id "7C-38-66-40-C0-1D"
+[11/04/2019 10:22:28] Lookup client data for physical address "7C-38-66-40-C0-1D" / client_id "7C-38-66-40-C0-1D"
+[11/04/2019 10:22:28] Client 7C-38-66-40-C0-1D is configured with the IP address 10.255.255.2
+[11/04/2019 10:22:28] Client 7C-38-66-40-C0-1D is configured with the IP address 10.255.255.2
+[11/04/2019 10:22:28] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 10:22:28] Sending a broadcast response to the client
+[11/04/2019 10:22:28] Connection 0: sending top queue packet
+[11/04/2019 10:22:28] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 10:22:28] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 10:22:28] DHCP message = DHCPDISCOVER
+[11/04/2019 10:22:28]    requested options: 1 3 6 12 15 28
+[11/04/2019 10:22:28] Lookup client data for physical address "7C-38-66-40-C0-1D" / client_id "7C-38-66-40-C0-1D"
+[11/04/2019 10:22:28] Client 7C-38-66-40-C0-1D is configured with the IP address 10.255.255.2
+[11/04/2019 10:22:28] Sending a broadcast response to the client
+[11/04/2019 10:22:28] Connection 0: sending top queue packet
+[11/04/2019 10:22:28] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 10:22:28] DHCP message = DHCPDISCOVER
+[11/04/2019 10:22:28]    requested options: 1 3 6 12 15 28
+[11/04/2019 10:22:28] Lookup client data for physical address "7C-38-66-40-C0-1D" / client_id "7C-38-66-40-C0-1D"
+[11/04/2019 10:22:28] Client 7C-38-66-40-C0-1D is configured with the IP address 10.255.255.2
+[11/04/2019 10:22:28] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 10:22:28] Sending a broadcast response to the client
+[11/04/2019 10:22:28] Connection 0: sending top queue packet
+[11/04/2019 10:22:28] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 10:22:28] DHCP message = DHCPREQUEST
+[11/04/2019 10:22:28]    requested options: 1 3 6 12 15 28
+[11/04/2019 10:22:28] Lookup client data for physical address "7C-38-66-40-C0-1D" / client_id "7C-38-66-40-C0-1D"
+[11/04/2019 10:22:28] Client 7C-38-66-40-C0-1D is configured with the IP address 10.255.255.2
+[11/04/2019 10:22:28] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 10:22:28] Sending a broadcast response to the client
+[11/04/2019 10:22:28] Connection 0: sending top queue packet
+[11/04/2019 10:22:28] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 10:22:28] DHCP message = DHCPREQUEST
+[11/04/2019 10:22:28]    requested options: 1 3 6 12 15 28
+[11/04/2019 10:22:28] Lookup client data for physical address "7C-38-66-40-C0-1D" / client_id "7C-38-66-40-C0-1D"
+[11/04/2019 10:22:29] Client 7C-38-66-40-C0-1D is configured with the IP address 10.255.255.2
+[11/04/2019 10:22:29] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 10:22:29] Sending a broadcast response to the client
+[11/04/2019 10:22:29] Connection 0: sending top queue packet
+[11/04/2019 10:22:29] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 10:22:29] Sending a broadcast response to the client
+[11/04/2019 10:22:29] Connection 0: sending top queue packet
+[11/04/2019 10:37:28] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 10:37:28] DHCP message = DHCPREQUEST
+[11/04/2019 10:37:28]    requested options: 1 3 6 12 15 28
+[11/04/2019 10:37:28] Matching scope found for 10.255.255.2, index=1
+[11/04/2019 10:37:28] Lookup client data for physical address "7C-38-66-40-C0-1D" / client_id "7C-38-66-40-C0-1D"
+[11/04/2019 10:37:28] Client 7C-38-66-40-C0-1D is configured with the IP address 10.255.255.2
+[11/04/2019 10:37:28] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 10:37:28] Sending a unicast response to the client ciaddr=10.255.255.2
+[11/04/2019 10:37:28] Connection 0: sending top queue packet
+[11/04/2019 10:42:25] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 10:42:25] recvfrom returns with error 10038
+[11/04/2019 10:42:25] DHCP Server terminated
+[11/04/2019 10:42:25] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 10:42:25] recvfrom returns with error 10038
+[11/04/2019 10:42:25] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 10:42:25] DHCP Server terminated
+[11/04/2019 10:42:25] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 10:42:26] NetworkAdapter Initialization returns 0
+[11/04/2019 10:42:26] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 10:42:26] NetworkAdapter Initialization returns 0
+[11/04/2019 10:42:26] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 10:42:31] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 10:42:31] DHCP Server terminated
+[11/04/2019 10:42:31] DHCP Server terminated
+[11/04/2019 10:42:31] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 10:42:31] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 10:42:31] NetworkAdapter Initialization returns 0
+[11/04/2019 10:42:31] NetworkAdapter Initialization returns 0
+[11/04/2019 10:42:31] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x0059b160)
+[11/04/2019 10:42:31] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x00ef8408)
+[11/04/2019 10:42:31] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 10:42:31] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 10:42:39] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 10:42:39] DHCP message = DHCPDISCOVER
+[11/04/2019 10:42:39] DHCP message = DHCPDISCOVER
+[11/04/2019 10:42:39]    requested options: 1 3 6 12 15 28
+[11/04/2019 10:42:39]    requested options: 1 3 6 12 15 28
+[11/04/2019 10:42:39] Lookup client data for physical address "7C-38-66-40-C0-1D" / client_id "7C-38-66-40-C0-1D"
+[11/04/2019 10:42:39] Lookup client data for physical address "7C-38-66-40-C0-1D" / client_id "7C-38-66-40-C0-1D"
+[11/04/2019 10:42:39] Client 7C-38-66-40-C0-1D is configured with the IP address 10.255.255.2
+[11/04/2019 10:42:39] Client 7C-38-66-40-C0-1D is configured with the IP address 10.255.255.2
+[11/04/2019 10:42:39] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 10:42:39] Sending a broadcast response to the client
+[11/04/2019 10:42:39] Connection 0: sending top queue packet
+[11/04/2019 10:42:39] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 10:42:39] DHCP message = DHCPDISCOVER
+[11/04/2019 10:42:39]    requested options: 1 3 6 12 15 28
+[11/04/2019 10:42:39] Lookup client data for physical address "7C-38-66-40-C0-1D" / client_id "7C-38-66-40-C0-1D"
+[11/04/2019 10:42:39] Client 7C-38-66-40-C0-1D is configured with the IP address 10.255.255.2
+[11/04/2019 10:42:39] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 10:42:39] Sending a broadcast response to the client
+[11/04/2019 10:42:39] Connection 0: sending top queue packet
+[11/04/2019 10:42:39] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 10:42:39] DHCP message = DHCPDISCOVER
+[11/04/2019 10:42:39]    requested options: 1 3 6 12 15 28
+[11/04/2019 10:42:39] Lookup client data for physical address "7C-38-66-40-C0-1D" / client_id "7C-38-66-40-C0-1D"
+[11/04/2019 10:42:39] Client 7C-38-66-40-C0-1D is configured with the IP address 10.255.255.2
+[11/04/2019 10:42:39] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 10:42:39] Sending a broadcast response to the client
+[11/04/2019 10:42:39] Connection 0: sending top queue packet
+[11/04/2019 10:42:39] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 10:42:39] DHCP message = DHCPREQUEST
+[11/04/2019 10:42:39]    requested options: 1 3 6 12 15 28
+[11/04/2019 10:42:39] Lookup client data for physical address "7C-38-66-40-C0-1D" / client_id "7C-38-66-40-C0-1D"
+[11/04/2019 10:42:39] Client 7C-38-66-40-C0-1D is configured with the IP address 10.255.255.2
+[11/04/2019 10:42:39] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 10:42:39] Sending a broadcast response to the client
+[11/04/2019 10:42:39] Connection 0: sending top queue packet
+[11/04/2019 10:42:39] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 10:42:39] DHCP message = DHCPREQUEST
+[11/04/2019 10:42:39]    requested options: 1 3 6 12 15 28
+[11/04/2019 10:42:39] Lookup client data for physical address "7C-38-66-40-C0-1D" / client_id "7C-38-66-40-C0-1D"
+[11/04/2019 10:42:39] Client 7C-38-66-40-C0-1D is configured with the IP address 10.255.255.2
+[11/04/2019 10:42:40] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 10:42:40] Sending a broadcast response to the client
+[11/04/2019 10:42:40] Connection 0: sending top queue packet
+[11/04/2019 10:42:40] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 10:42:40] Sending a broadcast response to the client
+[11/04/2019 10:42:40] Connection 0: sending top queue packet
+[11/04/2019 10:51:32] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 10:51:32] DHCP message = DHCPDISCOVER
+[11/04/2019 10:51:32] DHCP message = DHCPDISCOVER
+[11/04/2019 10:51:32]    requested options: 1 3 6 12 15 28
+[11/04/2019 10:51:32]    requested options: 1 3 6 12 15 28
+[11/04/2019 10:51:32] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 10:51:32] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 10:51:32] Client 7C-38-66-40-E2-20 is not configured
+[11/04/2019 10:51:32] Client 7C-38-66-40-E2-20 is not configured
+[11/04/2019 10:51:33] Perform auto configuration
+[11/04/2019 10:51:33] IPPOOL_1: 10.255.255.1-255
+[11/04/2019 10:51:33] Perform auto configuration
+[11/04/2019 10:51:33] IPPOOL_1: 10.255.255.1-255
+[11/04/2019 10:51:33] successfully matching the requested address
+[11/04/2019 10:51:33] Auto configuration succeeded: IP-Addr = 10.255.255.1
+[11/04/2019 10:51:33] successfully matching the requested address
+[11/04/2019 10:51:33] Auto configuration succeeded: IP-Addr = 10.255.255.1
+[11/04/2019 10:51:33] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 10:51:33] Sending a broadcast response to the client
+ease time = 1800)
+[11/04/2019 10:51:33] Connection 0: sending top queue packet
+[11/04/2019 10:51:33] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 10:51:33] DHCP message = DHCPDISCOVER
+[11/04/2019 10:51:33]    requested options: 1 3 6 12 15 28
+[11/04/2019 10:51:33] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 10:51:33] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 10:51:33] Sending a broadcast response to the client
+[11/04/2019 10:51:33] Connection 0: sending top queue packet
+[11/04/2019 10:51:33] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 10:51:33] DHCP message = DHCPDISCOVER
+[11/04/2019 10:51:33]    requested options: 1 3 6 12 15 28
+[11/04/2019 10:51:33] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 10:51:33] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 10:51:33] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 10:51:33] Sending a broadcast response to the client
+[11/04/2019 10:51:33] Connection 0: sending top queue packet
+[11/04/2019 10:51:33] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 10:51:33] DHCP message = DHCPREQUEST
+[11/04/2019 10:51:33]    requested options: 1 3 6 12 15 28
+[11/04/2019 10:51:33] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 10:51:33] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 10:51:33] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 10:51:33] Sending a broadcast response to the client
+[11/04/2019 10:51:33] Connection 0: sending top queue packet
+[11/04/2019 10:51:33] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 10:51:33] DHCP message = DHCPREQUEST
+[11/04/2019 10:51:33]    requested options: 1 3 6 12 15 28
+[11/04/2019 10:51:33] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 10:51:33] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 10:51:33] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 10:51:33] Sending a broadcast response to the client
+[11/04/2019 10:51:33] Connection 0: sending top queue packet
+[11/04/2019 10:51:33] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 10:51:34] Sending a broadcast response to the client
+[11/04/2019 10:51:34] Connection 0: sending top queue packet
+[11/04/2019 11:06:33] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 11:06:33] DHCP message = DHCPREQUEST
+[11/04/2019 11:06:33]    requested options: 1 3 6 12 15 28
+[11/04/2019 11:06:33] Matching scope found for 10.255.255.1, index=1
+[11/04/2019 11:06:33] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 11:06:33] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 11:06:33] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 11:06:33] Sending a unicast response to the client ciaddr=10.255.255.1
+[11/04/2019 11:06:33] Connection 0: sending top queue packet
+[11/04/2019 11:13:10] Delete auto-config client 7C-38-66-40-C0-1D
+[11/04/2019 11:21:33] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 11:21:33] DHCP message = DHCPREQUEST
+[11/04/2019 11:21:33]    requested options: 1 3 6 12 15 28
+[11/04/2019 11:21:33] Matching scope found for 10.255.255.1, index=1
+[11/04/2019 11:21:33] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 11:21:33] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 11:21:33] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 11:21:33] Sending a unicast response to the client ciaddr=10.255.255.1
+[11/04/2019 11:21:33] Connection 0: sending top queue packet
+[11/04/2019 11:21:59] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 11:21:59] recvfrom returns with error 10038
+[11/04/2019 11:21:59] DHCP Server terminated
+[11/04/2019 11:21:59] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 11:21:59] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 11:21:59] recvfrom returns with error 10038
+[11/04/2019 11:21:59] DHCP Server terminated
+[11/04/2019 11:21:59] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 11:21:59] NetworkAdapter Initialization returns 0
+[11/04/2019 11:21:59] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 11:21:59] NetworkAdapter Initialization returns 0
+[11/04/2019 11:21:59] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 11:22:15] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 11:22:15] DHCP Server terminated
+[11/04/2019 11:22:15] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 11:22:15] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 11:22:15] DHCP Server terminated
+[11/04/2019 11:22:15] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 11:22:15] NetworkAdapter Initialization returns 0
+[11/04/2019 11:22:15] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x00ef82a8)
+[11/04/2019 11:22:15] NetworkAdapter Initialization returns 0
+[11/04/2019 11:22:15] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 11:22:15] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x0059b100)
+[11/04/2019 11:22:15] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 11:22:21] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 11:22:21] DHCP message = DHCPDISCOVER
+[11/04/2019 11:22:21] DHCP message = DHCPDISCOVER
+[11/04/2019 11:22:21]    requested options: 1 3 6 12 15 28
+[11/04/2019 11:22:21]    requested options: 1 3 6 12 15 28
+[11/04/2019 11:22:21] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 11:22:21] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 11:22:21] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 11:22:21] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 11:22:22] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 11:22:22] Sending a broadcast response to the client
+[11/04/2019 11:22:22] Connection 0: sending top queue packet
+[11/04/2019 11:22:22] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 11:22:22] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 11:22:22] DHCP message = DHCPDISCOVER
+[11/04/2019 11:22:22]    requested options: 1 3 6 12 15 28
+[11/04/2019 11:22:22] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 11:22:22] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 11:22:22] Sending a broadcast response to the client
+[11/04/2019 11:22:22] Connection 0: sending top queue packet
+[11/04/2019 11:22:22] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 11:22:22] DHCP message = DHCPDISCOVER
+[11/04/2019 11:22:22]    requested options: 1 3 6 12 15 28
+[11/04/2019 11:22:22] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 11:22:22] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 11:22:22] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 11:22:22] Sending a broadcast response to the client
+[11/04/2019 11:22:22] Connection 0: sending top queue packet
+[11/04/2019 11:22:22] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 11:22:22] DHCP message = DHCPREQUEST
+[11/04/2019 11:22:22]    requested options: 1 3 6 12 15 28
+[11/04/2019 11:22:22] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 11:22:22] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 11:22:22] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 11:22:22] Sending a broadcast response to the client
+[11/04/2019 11:22:22] Connection 0: sending top queue packet
+[11/04/2019 11:22:22] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 11:22:22] DHCP message = DHCPREQUEST
+[11/04/2019 11:22:22]    requested options: 1 3 6 12 15 28
+[11/04/2019 11:22:22] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 11:22:22] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 11:22:22] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 11:22:22] Sending a broadcast response to the client
+[11/04/2019 11:22:22] Connection 0: sending top queue packet
+[11/04/2019 11:22:22] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 11:22:22] Sending a broadcast response to the client
+[11/04/2019 11:22:22] Connection 0: sending top queue packet
+[11/04/2019 11:23:15] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 11:23:15] recvfrom returns with error 10038
+[11/04/2019 11:23:15] DHCP Server terminated
+[11/04/2019 11:23:15] DHCP Server terminated
+[11/04/2019 11:23:15] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 11:23:15] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 11:23:15] NetworkAdapter Initialization returns 0
+[11/04/2019 11:23:15] NetworkAdapter Initialization returns 0
+[11/04/2019 11:23:15] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 11:23:15] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 11:23:36] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 11:23:36] DHCP Server terminated
+[11/04/2019 11:23:36] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 11:23:36] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 11:23:36] DHCP Server terminated
+[11/04/2019 11:23:36] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 11:23:37] NetworkAdapter Initialization returns 0
+[11/04/2019 11:23:37] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x00ef8508)
+[11/04/2019 11:23:37] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 11:23:37] NetworkAdapter Initialization returns 0
+[11/04/2019 11:23:37] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x0059b160)
+[11/04/2019 11:23:37] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 11:23:42] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 11:23:42] DHCP message = DHCPDISCOVER
+[11/04/2019 11:23:42] DHCP message = DHCPDISCOVER
+[11/04/2019 11:23:42]    requested options: 1 3 6 12 15 28
+[11/04/2019 11:23:42]    requested options: 1 3 6 12 15 28
+[11/04/2019 11:23:42] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 11:23:42] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 11:23:42] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 11:23:42] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 11:23:42] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 11:23:42] Sending a broadcast response to the client
+[11/04/2019 11:23:42] Connection 0: sending top queue packet
+[11/04/2019 11:23:42] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 11:23:42] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 11:23:42] DHCP message = DHCPDISCOVER
+[11/04/2019 11:23:42]    requested options: 1 3 6 12 15 28
+[11/04/2019 11:23:42] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 11:23:42] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 11:23:42] Connection 0: sending top queue packet
+[11/04/2019 11:23:42] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 11:23:42] DHCP message = DHCPDISCOVER
+[11/04/2019 11:23:42]    requested options: 1 3 6 12 15 28
+[11/04/2019 11:23:42] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 11:23:42] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 11:23:43] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 11:23:43] Sending a broadcast response to the client
+[11/04/2019 11:23:43] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 11:23:43] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 11:23:43] DHCP message = DHCPREQUEST
+[11/04/2019 11:23:43]    requested options: 1 3 6 12 15 28
+[11/04/2019 11:23:43] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 11:23:43] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 11:23:43] Sending a broadcast response to the client
+[11/04/2019 11:23:43] Connection 0: sending top queue packet
+[11/04/2019 11:23:43] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 11:23:43] DHCP message = DHCPREQUEST
+[11/04/2019 11:23:43]    requested options: 1 3 6 12 15 28
+[11/04/2019 11:23:43] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 11:23:43] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 11:23:43] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 11:23:43] Sending a broadcast response to the client
+[11/04/2019 11:23:43] Connection 0: sending top queue packet
+[11/04/2019 11:23:43] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 11:23:43] Sending a broadcast response to the client
+[11/04/2019 11:23:43] Connection 0: sending top queue packet
+[11/04/2019 11:38:42] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 11:38:42] DHCP message = DHCPREQUEST
+[11/04/2019 11:38:42]    requested options: 1 3 6 12 15 28
+[11/04/2019 11:38:42] Matching scope found for 10.255.255.1, index=1
+[11/04/2019 11:38:42] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 11:38:42] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 11:38:42] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 11:38:42] Sending a unicast response to the client ciaddr=10.255.255.1
+[11/04/2019 11:38:42] Connection 0: sending top queue packet
+[11/04/2019 11:53:42] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 11:53:42] DHCP message = DHCPREQUEST
+[11/04/2019 11:53:42]    requested options: 1 3 6 12 15 28
+[11/04/2019 11:53:42] Matching scope found for 10.255.255.1, index=1
+[11/04/2019 11:53:42] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 11:53:42] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 11:53:42] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 11:53:42] Sending a unicast response to the client ciaddr=10.255.255.1
+[11/04/2019 11:53:42] Connection 0: sending top queue packet
+[11/04/2019 12:08:42] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:08:42] DHCP message = DHCPREQUEST
+[11/04/2019 12:08:42]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:08:42] Matching scope found for 10.255.255.1, index=1
+[11/04/2019 12:08:42] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:08:42] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:08:43] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 12:08:43] Sending a unicast response to the client ciaddr=10.255.255.1
+[11/04/2019 12:08:43] Connection 0: sending top queue packet
+[11/04/2019 12:14:25] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 12:14:25] recvfrom returns with error 10038
+[11/04/2019 12:14:25] DHCP Server terminated
+[11/04/2019 12:14:25] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 12:14:25] recvfrom returns with error 10038
+[11/04/2019 12:14:25] DHCP Server terminated
+[11/04/2019 12:14:25] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 12:14:25] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 12:14:25] NetworkAdapter Initialization returns 0
+[11/04/2019 12:14:25] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 12:14:25] NetworkAdapter Initialization returns 0
+[11/04/2019 12:14:25] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 12:14:51] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 12:14:51] DHCP Server terminated
+[11/04/2019 12:14:51] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 12:14:51] DHCP Server terminated
+[11/04/2019 12:14:51] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 12:14:51] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 12:14:51] NetworkAdapter Initialization returns 0
+[11/04/2019 12:14:52] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x00ef8248)
+[11/04/2019 12:14:52] NetworkAdapter Initialization returns 0
+[11/04/2019 12:14:52] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 12:14:52] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x0059b0a0)
+[11/04/2019 12:14:52] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 12:14:57] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:14:57] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:14:57] DHCP message = DHCPDISCOVER
+[11/04/2019 12:14:57]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:14:57] DHCP message = DHCPDISCOVER
+[11/04/2019 12:14:57]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:14:57] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:14:57] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:14:57] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:14:57] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:14:58] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 12:14:58] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 12:14:58] Sending a broadcast response to the client
+[11/04/2019 12:14:58] Connection 0: sending top queue packet
+[11/04/2019 12:14:58] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:14:58] DHCP message = DHCPDISCOVER
+[11/04/2019 12:14:58]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:14:58] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:14:58] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:14:58] Sending a broadcast response to the client
+[11/04/2019 12:14:58] Connection 0: sending top queue packet
+[11/04/2019 12:14:58] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:14:58] DHCP message = DHCPDISCOVER
+[11/04/2019 12:14:58]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:14:58] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:14:58] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:14:58] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 12:14:58] Sending a broadcast response to the client
+[11/04/2019 12:14:58] Connection 0: sending top queue packet
+[11/04/2019 12:14:58] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:14:58] DHCP message = DHCPREQUEST
+[11/04/2019 12:14:58]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:14:58] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:14:58] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:14:58] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 12:14:58] Sending a broadcast response to the client
+[11/04/2019 12:14:58] Connection 0: sending top queue packet
+[11/04/2019 12:14:58] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:14:58] DHCP message = DHCPREQUEST
+[11/04/2019 12:14:58]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:14:58] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:14:58] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:14:58] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 12:14:58] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 12:14:58] Sending a broadcast response to the client
+[11/04/2019 12:14:58] Connection 0: sending top queue packet
+[11/04/2019 12:14:58] Sending a broadcast response to the client
+[11/04/2019 12:14:58] Connection 0: sending top queue packet
+[11/04/2019 12:15:16] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 12:15:16] recvfrom returns with error 10038
+[11/04/2019 12:15:16] DHCP Server terminated
+[11/04/2019 12:15:16] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 12:15:16] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 12:15:16] recvfrom returns with error 10038
+[11/04/2019 12:15:16] DHCP Server terminated
+[11/04/2019 12:15:16] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 12:15:16] NetworkAdapter Initialization returns 0
+[11/04/2019 12:15:16] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 12:15:16] NetworkAdapter Initialization returns 0
+[11/04/2019 12:15:16] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 12:15:30] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 12:15:30] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 12:15:30] DHCP Server terminated
+[11/04/2019 12:15:30] DHCP Server terminated
+[11/04/2019 12:15:30] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 12:15:30] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 12:15:31] NetworkAdapter Initialization returns 0
+[11/04/2019 12:15:31] NetworkAdapter Initialization returns 0
+[11/04/2019 12:15:31] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x00ef8488)
+[11/04/2019 12:15:31] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x0059b220)
+[11/04/2019 12:15:31] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 12:15:31] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 12:15:36] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:15:36] DHCP message = DHCPDISCOVER
+[11/04/2019 12:15:36] DHCP message = DHCPDISCOVER
+[11/04/2019 12:15:36] [11/04/2019 12:15:36]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:15:36] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:15:36] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:15:36] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:15:36] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:15:37] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 12:15:37] Sending a broadcast response to the client
+[11/04/2019 12:15:37] Connection 0: sending top queue packet
+[11/04/2019 12:15:37] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 12:15:37] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:15:37] DHCP message = DHCPDISCOVER
+[11/04/2019 12:15:37]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:15:37] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:15:37] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:15:37] Sending a broadcast response to the client
+[11/04/2019 12:15:37] Connection 0: sending top queue packet
+[11/04/2019 12:15:37] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:15:37] DHCP message = DHCPDISCOVER
+[11/04/2019 12:15:37]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:15:37] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:15:37] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:15:37] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 12:15:37] Sending a broadcast response to the client
+[11/04/2019 12:15:37] Connection 0: sending top queue packet
+[11/04/2019 12:15:37] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:15:37] DHCP message = DHCPREQUEST
+[11/04/2019 12:15:37]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:15:37] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:15:37] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:15:37] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 12:15:37] Sending a broadcast response to the client
+[11/04/2019 12:15:37] Connection 0: sending top queue packet
+[11/04/2019 12:15:37] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:15:37] DHCP message = DHCPREQUEST
+[11/04/2019 12:15:37]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:15:37] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:15:37] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:15:37] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 12:15:37] Sending a broadcast response to the client
+[11/04/2019 12:15:37] Connection 0: sending top queue packet
+[11/04/2019 12:15:37] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 12:15:37] Sending a broadcast response to the client
+[11/04/2019 12:15:37] Connection 0: sending top queue packet
+[11/04/2019 12:16:39] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 12:16:39] recvfrom returns with error 10038
+[11/04/2019 12:16:39] recvfrom returns with error 10038
+[11/04/2019 12:16:39] DHCP Server terminated
+[11/04/2019 12:16:39] DHCP Server terminated
+[11/04/2019 12:16:39] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 12:16:39] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 12:16:39] NetworkAdapter Initialization returns 0
+[11/04/2019 12:16:39] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 12:16:39] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 12:16:54] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 12:16:54] DHCP Server terminated
+[11/04/2019 12:16:54] DHCP Server terminated
+[11/04/2019 12:16:54] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 12:16:54] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 12:16:55] NetworkAdapter Initialization returns 0
+[11/04/2019 12:16:55] NetworkAdapter Initialization returns 0
+[11/04/2019 12:16:55] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x00ef8448)
+[11/04/2019 12:16:55] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x0059b440)
+[11/04/2019 12:16:55] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 12:16:55] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 12:17:00] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:17:00] [11/04/2019 12:17:00] DHCP message = DHCPDISCOVER
+[11/04/2019 12:17:00]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:17:00]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:17:00] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:17:00] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:17:00] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:17:00] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:17:00] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 12:17:00] Sending a broadcast response to the client
+[11/04/2019 12:17:00] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 12:17:00] Connection 0: sending top queue packet
+[11/04/2019 12:17:00] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:17:00] DHCP message = DHCPDISCOVER
+[11/04/2019 12:17:00]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:17:00] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:17:00] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:17:00] Sending a broadcast response to the client
+[11/04/2019 12:17:00] Connection 0: sending top queue packet
+[11/04/2019 12:17:00] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:17:00] DHCP message = DHCPDISCOVER
+[11/04/2019 12:17:00]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:17:00] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:17:00] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:17:00] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 12:17:00] Sending a broadcast response to the client
+[11/04/2019 12:17:00] Connection 0: sending top queue packet
+[11/04/2019 12:17:00] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:17:00] DHCP message = DHCPREQUEST
+[11/04/2019 12:17:00]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:17:00] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:17:00] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:17:00] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 12:17:00] Sending a broadcast response to the client
+[11/04/2019 12:17:00] Connection 0: sending top queue packet
+[11/04/2019 12:17:00] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:17:00] DHCP message = DHCPREQUEST
+[11/04/2019 12:17:00]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:17:00] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:17:00] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:17:00] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 12:17:00] Sending a broadcast response to the client
+[11/04/2019 12:17:00] Connection 0: sending top queue packet
+[11/04/2019 12:17:01] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 12:17:01] Sending a broadcast response to the client
+[11/04/2019 12:17:01] Connection 0: sending top queue packet
+[11/04/2019 12:17:26] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 12:17:26] recvfrom returns with error 10038
+[11/04/2019 12:17:26] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 12:17:26] DHCP Server terminated
+[11/04/2019 12:17:26] recvfrom returns with error 10038
+[11/04/2019 12:17:26] DHCP Server terminated
+[11/04/2019 12:17:26] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 12:17:26] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 12:17:26] NetworkAdapter Initialization returns 0
+[11/04/2019 12:17:26] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 12:17:26] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 12:17:40] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 12:17:40] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 12:17:40] DHCP Server terminated
+[11/04/2019 12:17:40] DHCP Server terminated
+[11/04/2019 12:17:40] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 12:17:40] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 12:17:41] NetworkAdapter Initialization returns 0
+[11/04/2019 12:17:41] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x00ef8368)
+[11/04/2019 12:17:41] NetworkAdapter Initialization returns 0
+[11/04/2019 12:17:41] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 12:17:41] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x0059b160)
+[11/04/2019 12:17:41] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 12:17:46] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:17:46] DHCP message = DHCPDISCOVER
+[11/04/2019 12:17:46] DHCP message = DHCPDISCOVER
+[11/04/2019 12:17:46]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:17:46]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:17:46] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:17:46] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:17:46] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:17:46] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:17:46] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 12:17:46] Sending a broadcast response to the client
+[11/04/2019 12:17:46] Connection 0: sending top queue packet
+[11/04/2019 12:17:46] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:17:46] DHCP message = DHCPDISCOVER
+[11/04/2019 12:17:46]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:17:46] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:17:46] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:17:46] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 12:17:46] Sending a broadcast response to the client
+[11/04/2019 12:17:46] Connection 0: sending top queue packet
+[11/04/2019 12:17:46] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:17:46] DHCP message = DHCPDISCOVER
+[11/04/2019 12:17:46]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:17:46] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:17:46] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:17:46] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 12:17:46] Sending a broadcast response to the client
+[11/04/2019 12:17:46] Connection 0: sending top queue packet
+[11/04/2019 12:17:46] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:17:46] DHCP message = DHCPREQUEST
+[11/04/2019 12:17:46]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:17:46] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:17:46] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:17:46] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 12:17:47] Sending a broadcast response to the client
+[11/04/2019 12:17:47] Connection 0: sending top queue packet
+[11/04/2019 12:17:47] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 12:17:47] DHCP message = DHCPREQUEST
+[11/04/2019 12:17:47]    requested options: 1 3 6 12 15 28
+[11/04/2019 12:17:47] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 12:17:47] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 12:17:47] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 12:17:47] Sending a broadcast response to the client
+[11/04/2019 12:17:47] Connection 0: sending top queue packet
+[11/04/2019 12:17:47] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 12:17:47] Sending a broadcast response to the client
+[11/04/2019 12:17:47] Connection 0: sending top queue packet
+[11/04/2019 12:27:09] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 12:27:09] recvfrom returns with error 10038
+[11/04/2019 12:27:09] recvfrom returns with error 10038
+[11/04/2019 12:27:09] DHCP Server terminated
+[11/04/2019 12:27:09] DHCP Server terminated
+[11/04/2019 12:27:09] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 12:27:09] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 12:27:09] NetworkAdapter Initialization returns 0
+[11/04/2019 12:27:09] NetworkAdapter Initialization returns 0
+[11/04/2019 12:27:09] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 12:27:09] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 12:48:17] Delete auto-config client 7C-38-66-40-E2-20
+[11/04/2019 12:48:17] Delete auto-config client 7C-38-66-40-E2-20
+[11/04/2019 13:32:40] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 13:32:40] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 13:32:40] DHCP Server terminated
+[11/04/2019 13:32:40] DHCP Server terminated
+[11/04/2019 13:32:40] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 13:32:40] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 13:32:40] NetworkAdapter Initialization returns 0
+[11/04/2019 13:32:40] NetworkAdapter Initialization returns 0
+[11/04/2019 13:32:40] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x00ef8248)
+[11/04/2019 13:32:40] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x0059b440)
+[11/04/2019 13:32:40] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 13:32:41] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 13:32:52] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 13:32:52] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 13:32:52] DHCP message = DHCPDISCOVER
+[11/04/2019 13:32:52] DHCP message = DHCPDISCOVER
+[11/04/2019 13:32:52]    requested options: 1 3 6 12 15 28
+[11/04/2019 13:32:52]    requested options: 1 3 6 12 15 28
+[11/04/2019 13:32:52] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 13:32:52] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 13:32:52] Client 7C-38-66-40-E2-20 is not configured
+[11/04/2019 13:32:52] Client 7C-38-66-40-E2-20 is not configured
+[11/04/2019 13:32:52] Perform auto configuration
+[11/04/2019 13:32:52] Perform auto configuration
+[11/04/2019 13:32:52] IPPOOL_1: 10.255.255.1-255
+[11/04/2019 13:32:52] IPPOOL_1: 10.255.255.1-255
+[11/04/2019 13:32:52] successfully matching the requested address
+[11/04/2019 13:32:52] successfully matching the requested address
+[11/04/2019 13:32:52] Auto configuration succeeded: IP-Addr = 10.255.255.1
+[11/04/2019 13:32:52] Auto configuration succeeded: IP-Addr = 10.255.255.1
+[11/04/2019 13:32:52] Response: offer the configured IP address (lease time = 1800)
+[11/04/2019 13:32:52] Sending a broadcast response to the client
+ease time = 1800)
+[11/04/2019 13:32:52] Connection 0: sending top queue packet
+[11/04/2019 13:32:52] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 13:32:52] DHCP message = DHCPREQUEST
+[11/04/2019 13:32:52]    requested options: 1 3 6 12 15 28
+[11/04/2019 13:32:52] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 13:32:52] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 13:32:52] Sending a broadcast response to the client
+[11/04/2019 13:32:52] Connection 0: sending top queue packet
+[11/04/2019 13:32:52] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 13:32:52] DHCP message = DHCPREQUEST
+[11/04/2019 13:32:52]    requested options: 1 3 6 12 15 28
+[11/04/2019 13:32:52] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
+[11/04/2019 13:32:52] Client 7C-38-66-40-E2-20 is configured with the IP address 10.255.255.1
+[11/04/2019 13:32:53] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 13:32:53] Sending a broadcast response to the client
+[11/04/2019 13:32:53] Connection 0: sending top queue packet
+[11/04/2019 13:32:53] Response: hand out the configured IP address (lease time = 1800)
+[11/04/2019 13:32:53] Sending a broadcast response to the client
+[11/04/2019 13:32:53] Connection 0: sending top queue packet
+[11/04/2019 13:46:23] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 13:46:23] recvfrom returns with error 10038
+[11/04/2019 13:46:23] DHCP Server terminated
+[11/04/2019 13:46:23] DHCP Server terminated
+[11/04/2019 13:46:23] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 13:46:23] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 13:46:23] NetworkAdapter Initialization returns 0
+[11/04/2019 13:46:23] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 13:46:23] NetworkAdapter Initialization returns 0
+[11/04/2019 13:46:23] Adapter 0 with IP address 10.10.4.19 found but not used
+[11/04/2019 13:47:21] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 13:47:21] DHCP Server is terminating (ignore error messages that follow)
+[11/04/2019 13:47:21] DHCP Server terminated
+[11/04/2019 13:47:21] DHCP Server terminated
+[11/04/2019 13:47:21] DHCP Server V2.5.2.3 started as Application
+[11/04/2019 13:47:21] DHCP Server V2.5.2.3 started as Service
+[11/04/2019 13:47:21] NetworkAdapter Initialization returns 0
+[11/04/2019 13:47:21] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x00ef8348)
+[11/04/2019 13:47:21] Adapter 0 with IP address 10.10.0.0 found (pAdap=0x0059b280)
+[11/04/2019 13:47:21] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 13:47:21] Adapter 1 with IP address 10.10.4.19 found but not used
+[11/04/2019 13:47:28] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 13:47:28] Adapter 0 has recognized an incoming DHCP request
+[11/04/2019 13:47:28] DHCP message = DHCPDISCOVER
+[11/04/2019 13:47:28] DHCP message = DHCPDISCOVER
+[11/04/2019 13:47:28]    requested options: 1 3 6 12 15 28
+[11/04/2019 13:47:28]    requested options: 1 3 6 12 15 28
+[11/04/2019 13:47:28] Lookup client data for physical address "7C-38-66-40-E2-20" / client_id "7C-38-66-40-E2-20"
