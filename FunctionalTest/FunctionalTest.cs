@@ -1,23 +1,10 @@
 ﻿using System;
-using System.IO;
-using System.IO.Ports;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Concurrent;
 using System.Reflection;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
-using System.Net.NetworkInformation;
-using System.Diagnostics;
 using MccDaq;
-using ErrorDefs;
-using Microsoft.VisualBasic;
-using Microsoft.VisualBasic.FileIO;
-using System.Xml;
-
-
 
 namespace KVStore_Update
 {
@@ -32,9 +19,9 @@ namespace KVStore_Update
         public string method_name;                      // Method name in the Tests.cs file
         public MethodInfo testinfo;                     // Pointer to the method used to run the test
         public string result;                           // Result of the test
-        public Dictionary<string,string> parameters;                    // Hashtable of parameters used in the test
+        public Dictionary<string, string> parameters;                    // Hashtable of parameters used in the test
 
-        public TestData(int step, string name, string method_name, MethodInfo function, Dictionary<string,string> parameters)
+        public TestData(int step, string name, string method_name, MethodInfo function, Dictionary<string, string> parameters)
         {
             this.step = step;
             this.name = name;
@@ -50,28 +37,14 @@ namespace KVStore_Update
      ******************************************************************************************************************************************/
     public partial class FunctionalTest
     {
-        //Test specific data --> To be stored in results file and in database
-        private string serial;             //Test serial number
-        private string location;
-        private int eqid;
-        private int user_id;
-        private DateTime date;
-        private DateTime time;
-
-
         private MccDaq_GPIO GPIO;
-        private Test_Equip DMM;
-        private Test_Equip PPS;
-        private Programmer SOM;
         private VLS_Tlm TLM;
 
         public List<TestData> Tests = new List<TestData>();
         private readonly ConcurrentQueue<string> Rx_Queue;
+        public Dictionary<string, string> results;
 
-        private bool cancel_request = false;
         private bool log_data;
-
-
 
         /************************************************************************************************************
          * Functional Test Class Constructor
@@ -85,8 +58,8 @@ namespace KVStore_Update
         {
             //This constructor is used for collecting methods from this data type
         }
-         public FunctionalTest(ConcurrentQueue<string> _rx)
-        {   
+        public FunctionalTest(ConcurrentQueue<string> _rx)
+        {
             //This constructor is used for development
             this.log_data = false;
             //Create the queue used for passing messages between threads
@@ -96,11 +69,14 @@ namespace KVStore_Update
         {
             //This constructor is used for production
             this.log_data = true;
-
+            //The result format for this program is as follows
+            //  | Board Serial | Date |  User | Command 1 | Command 2 | Command 3 | Command 4 | 
+            this.results = new Dictionary<string, string>();
             try
             {
                 this.GPIO = (MccDaq_GPIO)Parameters["gpio"];
-                this.SOM = (Programmer)Parameters["som"];
+                this.results.Add("serial", (string)Parameters["serial"]);
+
             }
             catch
             {
@@ -110,81 +86,8 @@ namespace KVStore_Update
             //Create the queue used for passing messages between threads
             this.Rx_Queue = _rx;
 
-
-        }
-        /************************************************************************************************************
-         * Functional Test Class Destructor
-         * 
-         * - Disconnects from the GPIO module, Power Supply, and Multimeter so that the next test can use the resources
-         * 
-         * **********************************************************************************************************/
-        ~FunctionalTest()
-        {
-            //TODO: Add the destructor tasks
-
-
-            //Destructor is obsolete after moving resource management to the GUI thread
         }
 
-        /******************************************************************************************************************************************
-         *                  MESSAGE PASSING UTILITIES
-         ******************************************************************************************************************************************/
-
-        /************************************************************************************************************
-         * ClearInput
-         * 
-         * Function: Clears the message buffer between the main thread and the test thread. 
-         * 
-         * Arguments: None
-         * 
-         * Returns: None
-         * 
-         * **********************************************************************************************************/
-        private void ClearInput()
-        {
-            string message;
-            while (!this.Rx_Queue.IsEmpty)
-            {
-                //Queue is not empty. Pending inputs or a pending cancel. Need to check to see if it is a cancel
-                this.Rx_Queue.TryPeek(out message);
-                if (message != "cancel")
-                {
-                    //If message is not a cancel, remove the message. Don't care if it's there 
-                    this.Rx_Queue.TryDequeue(out message);
-                }
-                else
-                {
-                    //Message is a cancel, need to exit function so that the program can read the message
-                    this.cancel_request = true;
-                    break;
-                }
-
-            }
-            return;
-        }
-        /************************************************************************************************************
-         * ReceiveInput
-         * 
-         * Function: Pops a message from the queue or waits until the queue has received a message.
-         * 
-         * Arguments: None
-         * 
-         * Returns: string message - message popped from the queue.
-         * 
-         * **********************************************************************************************************/
-        private string ReceiveInput()
-        {
-            string message;
-
-            while (this.Rx_Queue.IsEmpty)
-            {
-                //Do nothing, block until a message is received.
-            }
-            this.Rx_Queue.TryDequeue(out message);
-
-            return message;
-
-        }
 
 
         /******************************************************************************************************************************************
@@ -200,124 +103,138 @@ namespace KVStore_Update
          * **********************************************************************************************************/
         public void RunTest(IProgress<int> progress, IProgress<string> message)
         {
-            
-            string str;
 
-            //Power up the control board
+
+
+            //Power up the control board, this may take a long time. Add a 30s delay, typically takes ~20s
             this.GPIO.setPort(DigitalPortType.FirstPortA, 0xFF);
-
-            //Wait until we are able to connect to the device
-            bool timeout = false;
-            int timeout_millis = 20000; //20 seconds
-            DateTime start = DateTime.Now;
-            DateTime end = start.AddMilliseconds(timeout_millis);
-            //Thread.Sleep(1000);
-
-            this.TLM = new VLS_Tlm("10.10.0.5");
-            List<string> data = this.TLM.Command_QNX("ls");
-
-            
-
-
-
-
-
-            while (!timeout)
+            message.Report("Waiting for device to boot");
+            string msg = ".";
+            for (int i = 0; i < 22; i++)
             {
-                for(int i = 5; i<255; i++)
-                {
-                    string ip = "10.10.0." + i.ToString();
-                    if (PingHost(ip)) break;
-                }
+                Thread.Sleep(1000);
+                message.Report(msg);
+
             }
-            //Ip address equals the ip we pinged
 
 
-                
-            return;
-        }
+            //DHCP Server IP pool is 10.255.255.1- 255
+            //Each device connected will take another ip address, need to check to see which IP adress it is. The addresses expire after a 30 minute lease
 
-          
+            var watch = System.Diagnostics.Stopwatch.StartNew(); // Timing how long the program takes to run
 
-        public bool PingHost(string nameOrAddress)
+            string ip_address_base = "10.255.255.";
+            int end_address = 1;
+            while (this.Rx_Queue.IsEmpty && (end_address < 100))
             {
-                bool pingable = false;
-                Ping pinger = null;
-
                 try
                 {
-                    pinger = new Ping();
-                    PingReply reply = pinger.Send(nameOrAddress);
-                    pingable = reply.Status == IPStatus.Success;
-                }
-                catch (PingException)
-                {
-                    // Discard PingExceptions and return false;
-                }
-                finally
-                {
-                    if (pinger != null)
+                    message.Report("Trying at " + ip_address_base + end_address.ToString());
+                    this.TLM = new VLS_Tlm(ip_address_base + end_address.ToString());
+
+                    if (this.TLM.QNX_IsConnected())
                     {
-                        pinger.Dispose();
+                        message.Report("connected");
+                        message.Report("Connected to device at: " + ip_address_base + end_address.ToString());
+                        break;
                     }
+                    message.Report("Could not connect");
                 }
+                catch
+                {
 
-                return pingable;
+                }
+                end_address++;
             }
-    /************************************************************************************************************
-     * Program() - Runs the programming section only
-     * 
-     * Parameters: - progress --> Progress interface variable. Indicates the percentage of the test that is complete
-     *             - message  --> Progress interface variable. Used to update the text in the output box.  
-     *             
-     * **********************************************************************************************************/
+            if (end_address >= 100)
+            {
+                message.Report("Device is not connected, please check to see if the ethernet cable to connected properly.");
+                return;
+            }
+            else
+            {
 
 
-    /******************************************************************************************************************************************
-     *                                               DATA LOGGING FUNCTIONS
-     ******************************************************************************************************************************************/
 
-    /******************************************************************************************************************************************
-     * SQLite tables
-     *  - Control_Board_Test
-     *      - An entry in the control board Test Table is posted every time an instance of the functional test class is created. This holds
-     *      a unique test_id value that is used to group multiple tests that are run at the same time by one press of the "Run" button in 
-     *      the GUI. A control board test table looks like. The unique id will be shared by a secondary table
-     *      _______________________________________________________________________________
-     *      |                             Control Board Test                               |
-     *      --------------------------------------------------------------------------------
-     *      | Test_ID   | EQID     | USER_ID  | LOCATION | TIMESTAMP | SERIAL   | RESULT   |
-     *      --------------------------------------------------------------------------------
-     *      | <string>  | <string> | <string> | <string> | <string>  | <string> | <string> |
-     *      |    ...    |    ...   |    ...   |    ...   |    ...    |    ...   |    ...   |
-     *      |    ...    |    ...   |    ...   |    ...   |    ...    |    ...   |    ...   |
-     *      
-     *      
-     * - Test_Table
-     *      - An entry in the test table indicates an instance that a test was run on the board and the result of that specific test. This
-     *      will store the test name, serial number, parameters that the test was run against and the measured result of the test and the 
-     *      ultimate result of the test. The test id is unique to a set of tests, but no two entries in the table should be the same.
-     *      _________________________________________________________________________________
-     *      |                              Tests                                             |
-     *      ----------------------------------------------------------------------------------
-     *      | Test_ID   | SERIAL   | TEST_NAME| UpperBound | LowerBound | Measured | RESULT  |
-     *      ----------------------------------------------------------------------------------
-     *      | <string>  | <string> | <string> | <real>     | <real>     | <real>   | <string>|
-     *      |    ...    |    ...   |    ...   |    ...     |    ...     |    ...   |    ...  |
-     *      |    ...    |    ...   |    ...   |    ...     |    ...     |    ...   |    ...  |
-     *         
-     */
+                if (this.TLM.QNX_IsConnected())
+                {
+                    bool success = true;
+                    //Command 1
+                    this.TLM.QNX_WriteLine("/opt/vls/kvstore /fs/etfs/config/uim/datastore/deviceconfig update blower.ctrl 1");
+                    var result = this.TLM.QNX_Read();
+                    if (result.Contains("exited status=0"))
+                    {
+                        message.Report("Command 1: Pass");
+                        this.results.Add("cmd_1", "PASS");
 
-    private bool DatabaseExist()
-        {
+                    }
+                    else
+                    {
+                        message.Report("Command 1: Fail");
+                        this.results.Add("cmd_1", "FAIL");
+                        success = false;
+                    }
 
 
-            return true;
+                    //Command 2
+                    this.TLM.QNX_WriteLine("/opt/vls/kvstore /fs/sd0/config/uim/datastore/deviceconfig update blower.ctrl 1");
+                    result = this.TLM.QNX_Read();
+                    if (result.Contains("exited status=0"))
+                    {
+                        message.Report("Command 2: Pass");
+                        this.results.Add("cmd_2", "PASS");
+
+                    }
+                    else
+                    {
+                        message.Report("Command 2: Fail");
+                        this.results.Add("cmd_2", "FAIL");
+                        success = false;
+                    }
+
+                    //Command 3
+                    this.TLM.QNX_WriteLine("/opt/vls/kvstore /fs/etfs/config/uim/datastore/deviceconfig list");
+                    result = this.TLM.QNX_Read();
+                    if (result.Contains("blower.ctrl\t1"))
+                    {
+                        message.Report("Command 3: Pass");
+                        this.results.Add("cmd_3", "PASS");
+                    }
+                    else
+                    {
+                        message.Report("Command 3: Fail");
+                        this.results.Add("cmd_3", "FAIL");
+                        success = false;
+                    }
+
+                    //Command 4
+                    this.TLM.QNX_WriteLine("/opt/vls/kvstore /fs/sd0/config/uim/datastore/deviceconfig list");
+                    result = this.TLM.QNX_Read();
+                    if (result.Contains("blower.ctrl\t1"))
+                    {
+                        message.Report("Command 4: Pass");
+                        this.results.Add("cmd_4", "PASS");
+                    }
+                    else
+                    {
+                        message.Report("Command 4: Fail");
+                        this.results.Add("cmd_4", "FAIL");
+                        success = false;
+                    }
+                    if (success) this.results.Add("result", "PASS");
+                    else this.results.Add("result", "FAIL");
+
+
+                    //Disconnect from Telnet and turn device off.
+                    this.TLM.Disconnect();
+
+                    this.GPIO.setPort(DigitalPortType.FirstPortA, 0x00);
+
+                    message.Report("disconnected");
+                    //message.Report("Elapsed time = " + watch.ElapsedMilliseconds.ToString());
+                }
+            }
+            return;
         }
-        private bool LogData(Hashtable table)
-        {
-            return true;
-        }
-
     }
 }

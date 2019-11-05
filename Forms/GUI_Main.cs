@@ -50,15 +50,30 @@ namespace KVStore_Update
         
 
         //Functional Test Data
-        XmlNode TestSpecs;
+        
         List<TestData> Session_Tests= new List<TestData>();
         FunctionalTest test;
         private readonly ConcurrentQueue<string> message_queue = new ConcurrentQueue<string>();
-        public GUI_Main()
+        public GUI_Main(string user)
         {   
             //Initialize the GUI components
             InitializeComponent();
 
+            //Initialize the user
+            this.user_id = user;
+            this.Label_Username.Text = user;
+            if ((this.user_id == ADMIN) | (this.user_id == BLANK))
+            {
+                this.Check_LogToDatabase.Show();
+                this.Check_LogToDatabase.Checked = true;
+            }
+
+            else
+            {
+                this.Check_LogToDatabase.Show();
+                this.Check_LogToDatabase.Checked = true;
+                this.Check_LogToDatabase.Enabled = false;
+            }
 
             //Initialize Settings
             this.GetSettings();
@@ -156,55 +171,14 @@ namespace KVStore_Update
                     this.location = settings_node.Attributes["location"].Value;
                     
                 }
-                else if (xml.Name == "users")
-                {
-                    user_ids = xml;
-                }
+
                 
             }
-            this.Login(user_ids);
-
-
+            
             return user_ids;
 
         }
-        /*****************************************************************************************************************************************
-         * GetTests
-         * 
-         * Function: Reads from the specs.txt file to generate a list of tests that are available to the user. This list is the tests that will
-         * run during a full functional test.
-         * 
-         * Arguments: None
-         * 
-         * Returns: None - Update the class variable Tests
-         *
-         *********************************************************************************************************************************************/
-        private void Login(XmlNode x)
-        {
-            LoginForm login_screen = new LoginForm();
-            string user = null;
-            while (user == null)
-            {
-                user = login_screen.ShowForm(x);
-            }
-            this.Label_Username.Text = this.user_id;
 
-            //Show the log to database feature if the user is an admin
-            if ((this.user_id == ADMIN) | (this.user_id == BLANK))
-            {
-                this.Check_LogToDatabase.Show();
-                this.Check_LogToDatabase.Checked = true;
-            }
-
-            else
-            {
-                this.Check_LogToDatabase.Show();
-                this.Check_LogToDatabase.Checked = true;
-                this.Check_LogToDatabase.Enabled = false;
-            }
-
-
-        }
 
         /******************************************************************************************************
          * Button_Run_Click(): event handler for run test button click. 
@@ -224,11 +198,10 @@ namespace KVStore_Update
         {
 
             //Constant string variables for brevity
-            const string run_disp = "Run";
-            const string cancel_disp = "Cancel";
+            
             //async progress variables. Update the linked property when changed, hooking the appropriate event handler to update the GUI.
             var progress = new Progress<int>(i => StatusBar.Value = i);
-            var messages = new Progress<string>(s => this.console_debugOutput.AppendText("\n" + s));
+            var messages = new Progress<string>(s => this.Debug_Output(s));
             Hashtable Test_Params;
 
             this.StatusBar.Value = 0; //Set the statusbar value to 0 to indicate that the test is about to start.
@@ -256,12 +229,12 @@ namespace KVStore_Update
                 //Control board first pass. The board requires programming and functional testing
                 if (Check_Program.Checked)
                 {
-                    console_debugOutput.Text = "";
+                    console_debugOutput.Text = "Starting KVStore update";
 
 
                     await Task.Factory.StartNew(() => this.test.RunTest(progress, messages),
                                                 TaskCreationOptions.LongRunning);
-
+                    //Check to see if the program passed
                 }
                 
                 else
@@ -341,12 +314,52 @@ namespace KVStore_Update
          * ****************************************************************************************************/
         private void EndTest()
         {
-            
 
-            var user_confirmation = MessageBox.Show("Test is finished, saving test results", "Save!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            try
+            {
+                var user_confirmation = MessageBox.Show("Test is finished, saving test results\n" + "Results: " + this.test.results["result"], "Saved!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                bool success = this.SaveResults(this.test.results);
 
+            }
+            catch
+            {
+                //Error catching for null reference exceptions
+            }
+           
             this.Reset_GUI();
 
+        }
+
+        private bool SaveResults(Dictionary<string,string> test_results)
+        {
+            /*
+             * | Serial, Date, User, CMD 1, CMD2, CMD3, CMD4 |
+             */
+            string resultsFileName = "C:\\ECO-2375\\ECO-2375_Rework_Log.csv";
+            string results = "";
+            try
+            {
+                
+                results = "\n\r" + test_results["serial"] + "," + DateTime.Now.ToString() + "," + this.user_id + "," + test_results["cmd_1"] + "," + test_results["cmd_2"] + "," + test_results["cmd_3"] + "," + test_results["cmd_4"];
+            }
+            catch
+            {
+                return false;
+            }
+            if (!File.Exists(resultsFileName))
+            {
+                string results_header = "SerialNumber" + "," + "TimeStamp" + "," + "Test_Operator" + "," + "Command 1 Result" + "," + "Command 2 Result" + "," + "Command 3 Result" + "," + "Command 4 Result";
+                File.WriteAllText(resultsFileName, results_header);
+            }
+            try
+            {
+                File.AppendAllText(resultsFileName, results);
+            }
+            catch
+            {
+                return false;
+            }
+            return true;
         }
         /******************************************************************************************************
          * Field_SerialNumber_KeyUp
@@ -372,6 +385,7 @@ namespace KVStore_Update
             {   
                 //TODO: Check if the serial is valid and/or has changed.
                 this.console_debugOutput.Text = "Serial Number =  " + this.Field_SerialNumber.Text;
+                this.serial = this.Field_SerialNumber.Text;
 
                 this.Field_SerialNumber.Enabled = false;
                  
@@ -385,6 +399,30 @@ namespace KVStore_Update
 
         }
         /******************************************************************************************************
+         * Debug_Output() - Adds the string s to the debug output console and changes the color of the Telnet label
+         * - Parameters: string s - the message sent to be handled
+         * - Returns: None
+         * ****************************************************************************************************/
+        private void Debug_Output(string s)
+        {
+            if(s == "connected")
+            {
+                this.Label_Telnet.BackColor = System.Drawing.Color.FromArgb(128, 255, 128);
+            }
+            else if(s == "disconnected")
+            {
+                this.Label_Telnet.BackColor = System.Drawing.Color.FromArgb(255, 128, 128);
+            }
+            else if (s == ".")
+            {
+                this.console_debugOutput.AppendText(s);
+            }
+            else
+            {
+                this.console_debugOutput.AppendText("\n" + s);
+            }
+        }
+        /******************************************************************************************************
          * Console_DebugOutput_TextChanged   
          * - Method to scroll the rich text box to the end after each text change
          * 
@@ -395,35 +433,7 @@ namespace KVStore_Update
             this.console_debugOutput.SelectionStart = this.console_debugOutput.Text.Length;
             this.console_debugOutput.ScrollToCaret();
         }
-        /******************************************************************************************************
-         * Button_Yes_Click   
-         * - Adds the message "yes" to the event handler for the Functional Test Thread to handle
-         * 
-         * 
-         * ****************************************************************************************************/
-        private void Button_Yes_Click(object sender, EventArgs e)
-        {
-            message_queue.Enqueue("yes");
-        }
-        /******************************************************************************************************
-         * Button_No_Click   
-         * - Adds the message "no" to the event handler for the Functional Test Thread to handle
-         * 
-         * 
-         * ****************************************************************************************************/
-        private void Button_No_Click(object sender, EventArgs e)
-        {
-            message_queue.Enqueue("no");
-        }        
-        /******************************************************************************************************
-         * Check_SingleTest_CheckedChanged  
-         * - When Check_SingleTest is checked, the dropdown list appears and on the first check, the dropdown
-         * list is populated with all of the test names that are available.
-         * - When Check_SingleTest is unchecked, the dropdown lists is hidden, but the test names are preserved.
-         * 
-         * ****************************************************************************************************/
-
-       
+      
         /******************************************************************************************************
          * Check_LogToDatabase_CheckedChanged
          * - Event handler that allows user to change whether they want to log to the database during the session
@@ -443,8 +453,8 @@ namespace KVStore_Update
 
 
         /******************************************************************************************************
-         * Uncheck_All
-         * - Utility method to uncheck all of the check boxes
+         * Check_All
+         * - Utility method to Check all of the check boxes
          * 
          * ****************************************************************************************************/
         private void Check_All()
@@ -479,7 +489,13 @@ namespace KVStore_Update
             this.console_debugOutput.ResetText();
             this.console_debugOutput.AppendText("Please enter a serial number");
         }
-
+        /******************************************************************************************************
+         * Button_GPIO_Click  
+         * - Tries to reconnect to GPIO module if the module is not conencted on startup. When connected, this
+         * button is disabled.
+         * 
+         * 
+         * ****************************************************************************************************/
         private void Button_GPIO_Click(object sender, EventArgs e)
         {
             CheckDeviceConnections();

@@ -14,11 +14,10 @@ namespace KVStore_Update
     {
         XmlNode users;
         string username;
-        public LoginForm()
+        public LoginForm(XmlNode users)
         {
-
-            
             InitializeComponent();
+            this.users = users;
         }
 
         private void ButtonLogin_Click(object sender, EventArgs e)
@@ -31,7 +30,8 @@ namespace KVStore_Update
                 if(x.Attributes[0].InnerText == user)
                 {
                     if(x.Attributes[1].InnerText == pass)
-                    {
+                    {   
+
                         this.username = user;
                         this.Close();
                         break;
@@ -39,22 +39,19 @@ namespace KVStore_Update
                     }
                 }
 
-                 
-             
             }
         }
 
         private void ButtonExit_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
-        public string ShowForm(XmlNode users)
+        public string ShowForm()
         {
-            this.users = users;
-            this.ShowDialog();
             
-
+            var output = this.ShowDialog();
+            
             return this.username;
         }
 
