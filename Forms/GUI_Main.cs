@@ -28,8 +28,14 @@ namespace KVStore_Update
 
     public partial class GUI_Main : Form
     {
+        //RUN Button possible strings
+        const string RUN = "Run";
+        const string ETH_EN = "Enable Ethernet";
+        const string CANCEL = "Cancel";
+        const string OK = "OK";
+
         //Non designer GUI components
-        
+
         //Users that have admin privelege
         const string ADMIN = "admin";
         const string BLANK = "";
@@ -104,7 +110,7 @@ namespace KVStore_Update
             }
             else
             {
-                this.GPIO = null;
+               
             }
 
 
@@ -133,7 +139,7 @@ namespace KVStore_Update
         }
         else
         {
-            this.GPIO = null;
+            
         }
             
 
@@ -207,43 +213,69 @@ namespace KVStore_Update
             this.StatusBar.Value = 0; //Set the statusbar value to 0 to indicate that the test is about to start.
 
             //Button is pressed while program is not doing anything
-            if (this.Button_Run.Text == "Run")
-            {   //Change button text to indicate to user that the button serves a new function now. 
-                this.Button_Run.Text = "Cancel";
+            if (this.Button_Run.Text == RUN)
+            {
+                if (this.GPIO.Connected)
+                {
+                    //Change button text to indicate to user that the button serves a new function now. 
+                    this.Button_Run.Text = CANCEL;
 
-                //Running a new instance of a functional test
-                if (this.LogData)
-                {   
-                    //Production environment, data is logged to local database.
-                    //Create a dictionary to pass to the functional test class with all the information needed to run and log a test
-                    Test_Params = Create_Test_Table();
-                    this.test = new FunctionalTest(this.message_queue, Test_Params);
+                    //Running a new instance of a functional test
+                    if (this.LogData)
+                    {
+                        //Production environment, data is logged to local database.
+                        //Create a dictionary to pass to the functional test class with all the information needed to run and log a test
+                        Test_Params = Create_Test_Table();
+                        this.test = new FunctionalTest(this.message_queue, Test_Params);
+                    }
+                    else
+                    {
+                        //Development environment, data is not logged to a database and is only displayed on the debug window.
+                        this.test = new FunctionalTest(this.message_queue);
+                    }
+
+
+                    //Control board first pass. The board requires programming and functional testing
+                    if (Check_Program.Checked)
+                    {
+                        console_debugOutput.Text = "Starting KVStore update";
+
+
+                        await Task.Factory.StartNew(() => this.test.RunTest(progress, messages),
+                                                    TaskCreationOptions.LongRunning);
+                        //Check to see if the program passed
+
+                        this.EndTest();
+                    }
+
+                    else
+                    {
+                        console_debugOutput.Text = "Please select an action or exit the program";
+                    }
+                    this.StatusBar.Value = 100;
+                    
                 }
                 else
-                {   
-                    //Development environment, data is not logged to a database and is only displayed on the debug window.
-                    this.test = new FunctionalTest(this.message_queue);
-                }
-
-
-                //Control board first pass. The board requires programming and functional testing
-                if (Check_Program.Checked)
                 {
-                    console_debugOutput.Text = "Starting KVStore update";
-
-
-                    await Task.Factory.StartNew(() => this.test.RunTest(progress, messages),
-                                                TaskCreationOptions.LongRunning);
-                    //Check to see if the program passed
+                    console_debugOutput.Text = "GPIO module is not connected, please connect the module and restart the program";
                 }
-                
-                else
-                {
-                    console_debugOutput.Text = "Please select an action or exit the program";
-                }
-                this.StatusBar.Value = 100;
             }
-            else
+            else if(this.Button_Run.Text == ETH_EN)
+            {
+
+                this.console_debugOutput.Text = ("Enabling ethernet on the sd card");
+                if (this.SD_EnableEthernet())
+                {   
+                    this.Button_Run.Text = RUN;
+
+                    this.console_debugOutput.Text = ("Ethernet enable successful.\r\nPlease remove the card and place back into the UUT\n\n\rPress RUN when ready");
+                }
+                else
+                {
+                    this.console_debugOutput.Text = ("Could not find SD card, is it installed correctly?");
+                }
+            }
+            else if(this.Button_Run.Text == CANCEL)
             {   //Clear the queue and send message to cancel functional test thread.
                 while (!this.message_queue.IsEmpty)
                 {
@@ -252,13 +284,7 @@ namespace KVStore_Update
                 this.message_queue.Enqueue("cancel");
 
             }
-            //Reset state to exit method
-
-            this.Button_Run.Text = "Run";
-
-            // Reset GUI?
-            this.EndTest();
-        
+            
         }
 
         private Hashtable Create_Test_Table()
@@ -335,7 +361,7 @@ namespace KVStore_Update
             /*
              * | Serial, Date, User, CMD 1, CMD2, CMD3, CMD4 |
              */
-            string resultsFileName = "C:\\ECO-2375\\ECO-2375_Rework_Log.csv";
+            string resultsFileName = "..\\..\\Results\\ECO-2375_Rework_Log.csv";
             string results = "";
             try
             {
@@ -361,6 +387,38 @@ namespace KVStore_Update
             }
             return true;
         }
+
+        private bool SD_EnableEthernet()
+        {
+            bool success = false;
+            //Check to see which USB devices are present. Find the first letter drive available that is not the C drive.
+            DriveInfo[] alldrives = DriveInfo.GetDrives();
+            foreach(DriveInfo drive in alldrives)
+            {
+                //Check to see if ipl_nand.bin exists on the uSD card, if so, then this is the correct drive and we can write the required file to 
+                string filepath = drive.Name;
+                if (File.Exists(filepath + "ipl_nand.bin"))
+                {
+                    //Write the ethernetenable file to this path if the file does not exist
+                    if (!File.Exists(filepath + "ethernetenable"))
+                    {
+                        File.Create(filepath + "ethernetenable").Close();
+                    }
+
+                    //Confirm that the file exists
+                    if(File.Exists(filepath + "ethernetenable")) {
+                        success = true;
+                        break;
+                    }
+                    
+                }
+
+            }
+
+
+
+            return success;
+        }
         /******************************************************************************************************
          * Field_SerialNumber_KeyUp
          * - Method checks to see if the user has finished inputting a serial number by pressing <Enter>.
@@ -385,14 +443,18 @@ namespace KVStore_Update
             {   
                 //TODO: Check if the serial is valid and/or has changed.
                 this.console_debugOutput.Text = "Serial Number =  " + this.Field_SerialNumber.Text;
+                this.console_debugOutput.AppendText("\n\rPlease remove the SD card from the UUT, place in SD card reader. Press \"Enable Ethernet\" when done");
                 this.serial = this.Field_SerialNumber.Text;
 
                 this.Field_SerialNumber.Enabled = false;
                  
                 //Uncheck all checkboxes;
                 this.Check_All();
+                this.Button_Run.Text = ETH_EN;
                 this.Button_Run.Show();
                 this.Check_Program.Show();
+
+                
              
             }
            
