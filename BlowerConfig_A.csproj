@@ -7,7 +7,7 @@
     <ProjectGuid>{81EB3984-BF94-4CDD-932B-F442CAAFAD44}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>KVStore_Update</RootNamespace>
-    <AssemblyName>KVStore_Update</AssemblyName>
+    <AssemblyName>MFG-00536_A</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,6 +48,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>venteclogo1_uxX_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MccDaq, Version=2.9.0.0, Culture=neutral, PublicKeyToken=a37eefcf5c6ca10a, processorArchitecture=MSIL">
@@ -104,6 +107,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Forms\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -6131,12 +6135,8 @@
     <Content Include="ProgramLoad\HerculesLoad\ccs_base\mmWave\pyserial-3.2.1\pyserial.egg-info\top_level.txt" />
     <Content Include="ProgramLoad\HerculesLoad\dpinst_64_eng.exe" />
     <Content Include="Assets\vls_logo.png" />
+    <Content Include="venteclogo1_uxX_icon.ico" />
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <PackageReference Include="Telnet">
-      <Version>0.8.4</Version>
-    </PackageReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

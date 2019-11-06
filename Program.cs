@@ -64,7 +64,7 @@ namespace KVStore_Update
             XmlNode user_ids = null;
 
 
-            configuration.Load(@"..\..\Configuration\settings.xml");
+            configuration.Load(@".\Configuration\settings.xml");
 
 
             foreach (XmlNode xml in configuration.DocumentElement.ChildNodes)

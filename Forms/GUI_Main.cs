@@ -165,7 +165,7 @@ namespace KVStore_Update
             XmlNode user_ids = null;
 
             
-            configuration.Load(@"..\..\Configuration\settings.xml");
+            configuration.Load(@".\\Configuration\settings.xml");
 
 
             foreach(XmlNode xml in configuration.DocumentElement.ChildNodes)
@@ -244,7 +244,7 @@ namespace KVStore_Update
                         await Task.Factory.StartNew(() => this.test.RunTest(progress, messages),
                                                     TaskCreationOptions.LongRunning);
                         //Check to see if the program passed
-
+                        this.StatusBar.Value = 100;
                         this.EndTest();
                     }
 
@@ -252,7 +252,7 @@ namespace KVStore_Update
                     {
                         console_debugOutput.Text = "Please select an action or exit the program";
                     }
-                    this.StatusBar.Value = 100;
+                    
                     
                 }
                 else
@@ -361,7 +361,7 @@ namespace KVStore_Update
             /*
              * | Serial, Date, User, CMD 1, CMD2, CMD3, CMD4 |
              */
-            string resultsFileName = "..\\..\\Results\\ECO-2375_Rework_Log.csv";
+            string resultsFileName = ".\\Results\\ECO-2375_Rework_Log.csv";
             string results = "";
             try
             {
@@ -397,7 +397,7 @@ namespace KVStore_Update
             {
                 //Check to see if ipl_nand.bin exists on the uSD card, if so, then this is the correct drive and we can write the required file to 
                 string filepath = drive.Name;
-                if (File.Exists(filepath + "ipl_nand.bin"))
+                if (File.Exists(filepath + "qnxifs"))
                 {
                     //Write the ethernetenable file to this path if the file does not exist
                     if (!File.Exists(filepath + "ethernetenable"))

@@ -47,7 +47,7 @@
             // Button_Run
             // 
             this.Button_Run.Location = new System.Drawing.Point(568, 127);
-            this.Button_Run.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button_Run.Margin = new System.Windows.Forms.Padding(4);
             this.Button_Run.Name = "Button_Run";
             this.Button_Run.Size = new System.Drawing.Size(137, 52);
             this.Button_Run.TabIndex = 1;
@@ -59,7 +59,7 @@
             // 
             this.Field_SerialNumber.BackColor = System.Drawing.SystemColors.Window;
             this.Field_SerialNumber.Location = new System.Drawing.Point(116, 121);
-            this.Field_SerialNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Field_SerialNumber.Margin = new System.Windows.Forms.Padding(4);
             this.Field_SerialNumber.Name = "Field_SerialNumber";
             this.Field_SerialNumber.Size = new System.Drawing.Size(443, 22);
             this.Field_SerialNumber.TabIndex = 3;
@@ -78,7 +78,7 @@
             // console_debugOutput
             // 
             this.console_debugOutput.Location = new System.Drawing.Point(11, 222);
-            this.console_debugOutput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.console_debugOutput.Margin = new System.Windows.Forms.Padding(4);
             this.console_debugOutput.Name = "console_debugOutput";
             this.console_debugOutput.ReadOnly = true;
             this.console_debugOutput.Size = new System.Drawing.Size(693, 340);
@@ -89,7 +89,7 @@
             // StatusBar
             // 
             this.StatusBar.Location = new System.Drawing.Point(11, 186);
-            this.StatusBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.StatusBar.Margin = new System.Windows.Forms.Padding(4);
             this.StatusBar.Name = "StatusBar";
             this.StatusBar.Size = new System.Drawing.Size(695, 28);
             this.StatusBar.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
@@ -123,7 +123,7 @@
             this.Check_LogToDatabase.CheckState = System.Windows.Forms.CheckState.Checked;
             this.Check_LogToDatabase.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Check_LogToDatabase.Location = new System.Drawing.Point(11, 21);
-            this.Check_LogToDatabase.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Check_LogToDatabase.Margin = new System.Windows.Forms.Padding(4);
             this.Check_LogToDatabase.Name = "Check_LogToDatabase";
             this.Check_LogToDatabase.Size = new System.Drawing.Size(125, 20);
             this.Check_LogToDatabase.TabIndex = 18;
@@ -135,7 +135,7 @@
             // 
             this.Check_Program.AutoSize = true;
             this.Check_Program.Location = new System.Drawing.Point(16, 158);
-            this.Check_Program.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Check_Program.Margin = new System.Windows.Forms.Padding(4);
             this.Check_Program.Name = "Check_Program";
             this.Check_Program.Size = new System.Drawing.Size(79, 20);
             this.Check_Program.TabIndex = 7;
@@ -160,7 +160,7 @@
             this.Button_GPIO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Button_GPIO.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_GPIO.Location = new System.Drawing.Point(11, 49);
-            this.Button_GPIO.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button_GPIO.Margin = new System.Windows.Forms.Padding(4);
             this.Button_GPIO.Name = "Button_GPIO";
             this.Button_GPIO.Size = new System.Drawing.Size(137, 28);
             this.Button_GPIO.TabIndex = 32;
@@ -174,7 +174,7 @@
             this.Label_Telnet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Label_Telnet.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_Telnet.Location = new System.Drawing.Point(180, 49);
-            this.Label_Telnet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Label_Telnet.Margin = new System.Windows.Forms.Padding(4);
             this.Label_Telnet.Name = "Label_Telnet";
             this.Label_Telnet.Size = new System.Drawing.Size(137, 28);
             this.Label_Telnet.TabIndex = 33;
@@ -201,10 +201,10 @@
             this.Controls.Add(this.Field_SerialNumber);
             this.Controls.Add(this.Check_Program);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GUI_Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Control Board Test";
+            this.Text = "MFG-00536";
             ((System.ComponentModel.ISupportInitialize)(this.Logo_VLS)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

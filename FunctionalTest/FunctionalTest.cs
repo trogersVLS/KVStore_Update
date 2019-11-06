@@ -110,8 +110,17 @@ namespace KVStore_Update
             this.GPIO.setPort(DigitalPortType.FirstPortA, 0xFF);
             message.Report("Waiting for device to boot");
             string msg = ".";
-            for (int i = 0; i < 22; i++)
+            for (int i = 0; i < 40; i++)
             {
+                if (!Rx_Queue.IsEmpty)
+                {
+                    string read = "";
+                    while (!this.Rx_Queue.IsEmpty)
+                    {
+                        this.Rx_Queue.TryDequeue(out read);
+                    }
+                    if (read == "cancel") return;
+                }
                 Thread.Sleep(1000);
                 message.Report(msg);
 
@@ -149,13 +158,22 @@ namespace KVStore_Update
             if (end_address >= 100)
             {
                 message.Report("Device is not connected, please check to see if the ethernet cable to connected properly.");
-                return;
+                
             }
-            else
+            if (!Rx_Queue.IsEmpty)
+            {
+                string read ="";
+                while (!this.Rx_Queue.IsEmpty)
+                {
+                    this.Rx_Queue.TryDequeue(out read);
+                }
+                if (read == "cancel") return;
+            }
+            else if(this.TLM != null)
             {
 
 
-
+                
                 if (this.TLM.QNX_IsConnected())
                 {
                     bool success = true;
@@ -226,13 +244,21 @@ namespace KVStore_Update
 
 
                     //Disconnect from Telnet and turn device off.
-                    this.TLM.Disconnect();
-
-                    this.GPIO.setPort(DigitalPortType.FirstPortA, 0x00);
+                    
 
                     message.Report("disconnected");
                     //message.Report("Elapsed time = " + watch.ElapsedMilliseconds.ToString());
                 }
+
+                this.TLM.Disconnect();
+
+                
+            }
+            this.GPIO.setPort(DigitalPortType.FirstPortA, 0x00);
+            while(!this.Rx_Queue.IsEmpty)
+            {
+                string read;
+                this.Rx_Queue.TryDequeue(out read);
             }
             return;
         }
